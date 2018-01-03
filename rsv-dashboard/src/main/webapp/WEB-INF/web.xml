@@ -1,0 +1,54 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+  <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>HelloWorldExample</servlet-name>
+        <servlet-class>gov.bnl.racf.dashboard.HelloWorldExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldExample</servlet-name>
+        <url-pattern>/dashboard/HelloWorldExample</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>gov.bnl.racf.dashboard.HelloWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/dashboard/HelloWorld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>gov.bnl.racf.dashboard.SimpleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/dashboard/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DriverServlet</servlet-name>
+        <servlet-class>gov.bnl.racf.dashboard.DriverServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DriverServlet</servlet-name>
+        <url-pattern>/DriverServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MainPageServlet</servlet-name>
+        <servlet-class>gov.bnl.racf.dashboard.MainPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPageServlet</servlet-name>
+        <url-pattern>/MainPageServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

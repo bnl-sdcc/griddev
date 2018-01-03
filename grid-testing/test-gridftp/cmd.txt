@@ -1,0 +1,1 @@
+gridftpcopy file://localhost//tmp/myfile1  gsiftp://lcg01.usatlas.bnl.gov:2811//tmp/file1 4194304 4194304 11 true false

@@ -1,0 +1,46 @@
+jhover:1000:/nfs/mariachi.stonybrook.edu/home/jhover:/DC=org/DC=doegrids/OU=People/CN=John R. Hover 47116:
+helio:1002:/nfs/mariachi.stonybrook.edu/home/helio:/DC=org/DC=doegrids/OU=People/CN=Helio Takai 580623:
+vavilov:1003:/nfs/mariachi.stonybrook.edu/home/vavilov:/DC=org/DC=doegrids/OU=People/CN=Dmitry Vavilov 650245:
+zzjie:1004:/nfs/mariachi.stonybrook.edu/home/zzjie:Zejie Zhang:
+jason:1005:/nfs/mariachi.stonybrook.edu/home/jason:/DC=org/DC=doegrids/OU=People/CN=Jui-Tsun Hung 306935:
+bing:1006:/nfs/mariachi.stonybrook.edu/home/bing:Bingxin Shen:
+subodh:1007:/nfs/mariachi.stonybrook.edu/home/subodh:Subodh Chiwate:
+mingyi:1008:/nfs/mariachi.stonybrook.edu/home/mingyi:Mingyi:
+jspahn:1009:/nfs/mariachi.stonybrook.edu/home/jspahn:Jeff Spahn:
+osgadm:2001:/home/osgadm:OSG Grid Administrator Account:
+atlas:3000:/nfs/mariachi.stonybrook.edu/home/atlas:ATLAS VO:
+cdf:3001:/nfs/mariachi.stonybrook.edu/home/cdf:CDF VO:
+cigi:3002:/nfs/mariachi.stonybrook.edu/home/cigi:CIGI VO:
+cms:3003:/nfs/mariachi.stonybrook.edu/home/cms:CMS VO:
+compbiogrid:3004:/nfs/mariachi.stonybrook.edu/home/compbiogrid:Computational Biology VO:
+des:3005:/nfs/mariachi.stonybrook.edu/home/des:DES VO:
+dosar:3006:/nfs/mariachi.stonybrook.edu/home/dosar:DOSAR VO:
+dzero:3007:/nfs/mariachi.stonybrook.edu/home/dzero:DZero VO:
+engage:3008:/nfs/mariachi.stonybrook.edu/home/engage:Engage VO:
+fermilab:3009:/nfs/mariachi.stonybrook.edu/home/fermilab:Fermilab VO:
+fmri:3010:/nfs/mariachi.stonybrook.edu/home/fmri:FMRI VO:
+gadu:3011:/nfs/mariachi.stonybrook.edu/home/gadu:GADU VO:
+geant4:3012:/nfs/mariachi.stonybrook.edu/home/geant4:Geant4 VO:
+glow:3013:/nfs/mariachi.stonybrook.edu/home/glow:GLOW VO:
+gpn:3014:/nfs/mariachi.stonybrook.edu/home/gpn:GPN VO:
+grase:3015:/nfs/mariachi.stonybrook.edu/home/grase:GRASE VO:
+gridex:3016:/nfs/mariachi.stonybrook.edu/home/gridex:Grid Exerciser VO:
+grow:3017:/nfs/mariachi.stonybrook.edu/home/grow:GROW VO:
+gugrid:3018:/nfs/mariachi.stonybrook.edu/home/gugrid:GU Grid VO:
+i2u2:3019:/nfs/mariachi.stonybrook.edu/home/i2u2:I2U2 VO:
+ilc:3020:/nfs/mariachi.stonybrook.edu/home/ilc:ILC VO:
+ligo:3021:/nfs/mariachi.stonybrook.edu/home/ligo:LIGO VO:
+mariachi:3022:/nfs/mariachi.stonybrook.edu/home/mariachi:MARIACHI VO:
+minboone:3023:/nfs/mariachi.stonybrook.edu/home/minboone:MINIBOONE VO:
+minos:3024:/nfs/mariachi.stonybrook.edu/home/minos:MINOS VO:
+mis:3025:/nfs/mariachi.stonybrook.edu/home/mis:MIS VO:
+nanohub:3026:/nfs/mariachi.stonybrook.edu/home/nanohub:Nanohub VO:
+nwicg:3027:/nfs/mariachi.stonybrook.edu/home/nwicg:NWICG VO:
+nysgrid:3028:/nfs/mariachi.stonybrook.edu/home/nysgrid:NY State Grid VO:
+ops:3029:/nfs/mariachi.stonybrook.edu/home/ops:OSG ops VO:
+osg:3030:/nfs/mariachi.stonybrook.edu/home/osg:OSG Umbrella VO:
+osgedu:3031:/nfs/mariachi.stonybrook.edu/home/osgedu:OSG Educational VO:
+samgrid:3032:/nfs/mariachi.stonybrook.edu/home/samgrid:Samgrid VO:
+sbgrid:3033:/nfs/mariachi.stonybrook.edu/home/sbgrid:SBgrid VO:
+sdss:3034:/nfs/mariachi.stonybrook.edu/home/sdss:SDSS VO:
+star:3035:/nfs/mariachi.stonybrook.edu/home/star:STAR VO:

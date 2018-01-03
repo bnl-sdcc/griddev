@@ -1,0 +1,10 @@
+This condor submit example runs a program called 'myapp' that requires two command line arguments. Here is an example of running the program:
+
+Issue the command 'myapp Jack 90' and the output is:
+
+'Hi Jack. The sine of 90 is 1'
+
+It requires that the application be transfered to the grid computer - note the 'Transfer_Executable = true' in the submit file.  The arguments are space delimited  on the line  'arguments= George 90'. After the program has completed on the grid computer, check the myapp.out and myapp.error for the results.
+
+
+

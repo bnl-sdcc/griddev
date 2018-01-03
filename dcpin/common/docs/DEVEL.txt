@@ -1,0 +1,118 @@
+dcpin Developer Notes
+=====================
+
+Development
+===========
+
+dcpin uses the Python distutils package. All the following commands should work, and code should
+be checked in until it is compatible with them:
+
+./setup.py clean --all
+./setup.py bdist
+./setup.py sdist 
+./setup.py bdist_rpm
+./setup.py install
+
+REMEMBER:
+
+If you add files, you may need to add them to MANIFEST.in and/or setup.py under 'packages', 
+'package_dir', or 'data_files'. Please check you build under Python 2.3 and Python 2.4 before 
+committing.
+
+Run ./setup clean --all before checking anything into SVN. 
+
+Components
+==========
+
+dCache now has an administrative console which allows you to perform various alterations
+on files in the cache. It is accessible via SSH using a host key and is awkward. This 
+functionality will be wrapped by a python lib which the server will use. The server
+will handle all the transaction logic on the pinned files and communication with a
+remote client. Client-server communcation will be handled by Pyro (Python Remote Objects),
+initially unsecured, but later encrypted. Server will use a Python DB-API 2.0 database (MySQL)
+to store state.  
+
+USE CASES
+==========
+
+Client pin() request:
+1) client asks to pin a file for a certain amount of time, or until a certain date. 
+2) a) server stores temporary record of desire to pin this file. 
+   b) server queries dCache for information about the file (size, owner, etc)
+   b) server calculates to see whether pinning this file will put this user over quota. 
+   c) if not, server askes dCache to pin the file
+   d) server checks to see if the file is really pinned. 
+   e) server puts entry in the permanent pin table, and updates user quota. 
+   
+
+Client unpin() request:
+1) client asks to unpin a file
+2) a) server stores temp record.
+   b) checks dcache for file status
+   c) checks file ownership
+   d) unpins file
+   e) increases user quota. 
+
+
+Periodic System sweep():
+1) The server daemon scans the set of pinned files it has to see if 
+the expiration date has been reached. 
+2) If so, it will do an unpinning operation. 
+3) Notify users near their quota?
+
+
+
+Design
+=========
+
+      ---------------------
+      | PNFS              |
+      |                   |
+      ---------------------
+      | dc admin shell |
+      -----------------
+      		^
+      		|
+      		V
+      ---------------
+      | dcshell.py |
+      --------------------------------      -------------------------- 
+      | dcpin-server.py              |      | dcpin-client.py         |
+      |                              |      |                         |
+      |                              |<---->|  pin(file,expiration)   |
+      |                              |      |  unpin(file)            |
+      |-------------------------------      ---------------------------
+      | MySQLdb.py  |          
+      ---------------
+             ^
+             |
+             V
+      --------------------------------------
+      | Database ( MySQL)                  |
+      | Permanent table                    |
+      | --------------------------------   |
+      | | File | owner | size |        |   |
+      | |-------------------------------   |
+      | |      |       |      |        |   |
+      | |______|_______|______|________|   |
+      |                                    |
+      | Transaction table                  |
+      | |-------------------------------   |
+      | |      |       |      |        |   |
+      | |      |       |      |        |   |
+      | |______|_______|______|________|   |
+      |                                    |
+      | Other tables? owner/quota table?   |   
+      |                                    |
+      |------------------------------------
+
+
+dCache Interface commands
+============================
+
+
+
+
+
+
+             

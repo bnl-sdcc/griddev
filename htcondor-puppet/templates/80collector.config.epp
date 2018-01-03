@@ -1,0 +1,6 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# What pool collector should this host connect to?
+#
+CONDOR_HOST=<%= $htcondor::collector_host %>
+COLLECTOR_HOST=$(CONDOR_HOST):<%= $htcondor::set_collector_port %>

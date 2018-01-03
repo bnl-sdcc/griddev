@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <soapenv:Body>
+  <listMembersResponse xmlns="">
+   <listMembersReturn soapenc:arrayType="ns1:User[3]" xmlns:ns1="http://glite.org/wsdl/services/org.glite.security.voms" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+    <item>
+     <CA>/DC=org/DC=DOEGrids/OU=Certificate Authorities/CN=DOEGrids CA 1</CA>
+     <CN>Dan Yocum 346615</CN>
+     <DN>/DC=org/DC=doegrids/OU=People/CN=Dan Yocum 346615</DN>
+     <certUri xsi:nil="true"/>
+     <mail>yocum@fnal.gov</mail>
+    </item>
+    <item>
+     <CA>/DC=org/DC=DOEGrids/OU=Certificate Authorities/CN=DOEGrids CA 1</CA>
+     <CN>Steven Timm 74183</CN>
+     <DN>/DC=org/DC=doegrids/OU=People/CN=Steven Timm 74183</DN>
+     <certUri xsi:nil="true"/>
+     <mail>timm@fnal.gov</mail>
+    </item>
+    <item>
+     <CA>/DC=org/DC=DOEGrids/OU=Certificate Authorities/CN=DOEGrids CA 1</CA>
+     <CN>host/fermigrid2.fnal.gov</CN>
+     <DN>/DC=org/DC=doegrids/OU=Services/CN=host/fermigrid2.fnal.gov</DN>
+     <certUri xsi:nil="true"/>
+     <mail>yocum@fnal.gov</mail>
+    </item>
+   </listMembersReturn>
+  </listMembersResponse>
+ </soapenv:Body>
+</soapenv:Envelope>

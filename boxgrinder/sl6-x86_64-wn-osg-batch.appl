@@ -1,0 +1,32 @@
+name: sl6-x86_64-wn-osg-batch
+summary: SL 6 OSG worker node with Condor batch config.
+version: 1
+release: 0
+
+os:
+  name: sl
+  version: 6
+  password: griddev
+
+hardware:
+  cpus: 1
+  memory: 2048
+  partitions:
+    "/":
+      size: 5
+      
+appliances:
+  - sl6-x86_64-wn-osg
+  - sl6-x86_64-batch
+
+default_repos: false # default is true
+
+post:
+  base:
+    
+# Grid WN setup  
+    - "mkdir -p /home/osg/app"
+    - "mkdir -p /home/osg/data"
+    - "chmod -R ugo+rwx /home/osg/app"
+    - "chmod -R ugo+rwx /home/osg/data"
+    

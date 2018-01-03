@@ -1,0 +1,5 @@
+Executable = "simpleGlobus.sh";
+StdOutput = "simpleGlobus.out";
+StdError = "simpleGlobus.err";
+InputSandbox = {"simpleGlobus.sh"};
+OutputSandbox = {"simpleGlobus.out","simpleGlobus.err"};

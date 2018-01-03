@@ -1,0 +1,5 @@
+
+This repository contains probes Grid group writes to check the condor-g status on the autopilot submit hosts,
+it also contains scripts checking the pilot submission status on the remote gatekeeper side.
+
+ 

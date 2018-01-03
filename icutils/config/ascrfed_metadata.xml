@@ -1,0 +1,244 @@
+<EntitiesDescriptor Name="https://grid10.racf.bnl.gov/federation/ascrfed_metadata.xml"
+          xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+		  xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+          xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+          xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <EntityDescriptor 
+  		  entityID="https://grid10.racf.bnl.gov/idp/shibboleth"
+          validUntil="2020-01-01T00:00:00Z">
+    <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+        <Extensions>
+		<shibmd:Scope regexp="false">bnl.gov</shibmd:Scope>
+                <mdui:UIInfo>
+                        <mdui:DisplayName xml:lang="en">RACF IDP</mdui:DisplayName>
+                        <mdui:Description xml:lang="en">
+                                RACF Brookhaven National Laboratory
+                        </mdui:Description>
+                        <mdui:Logo height="23" width="15">
+				https://www.rcf.bnl.gov/shibboleth-ds/USATLAS_logo.jpg
+                        </mdui:Logo>
+                        <mdui:Logo height="172" width="97">
+				https://www.rcf.bnl.gov/shibboleth-ds/USATLAS_logo.jpg
+                        </mdui:Logo>
+                        <mdui:InformationURL xml:lang="en">
+                                https://www.racf.bnl.gov
+                        </mdui:InformationURL>
+                </mdui:UIInfo>
+        </Extensions>
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIVAIMGPgn1hMKNL7cwT9gmQ5K6AWPIMA0GCSqGSIb3DQEB
+BQUAMB4xHDAaBgNVBAMTE2dyaWQxMC5yYWNmLmJubC5nb3YwHhcNMTQwNzI5MTg0
+ODA5WhcNMTcwNzI5MTg0ODA5WjAeMRwwGgYDVQQDExNncmlkMTAucmFjZi5ibmwu
+Z292MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqCtVb1OzpsGOT0t2
+WoRd07LKKsrhEKLJICDcfPST6GAW2N8bFtIE1X0YaRDfVPZAQzYqOrNNqcNPGtkE
+/bp1LESUiiuHTtKfChRHtYQlz+17dOtPYa+ZHGYRsmcAOopU70ppSE6th/v5ZSc8
+ne2SvfZHghJ/uymkbsUaverPlU5qql5UBdDFXnkIWWlyz2/ruUvr8O+soy1jUUFy
+ibEbHRVZaL+3ywrvJEREwgBjYlnnORYOejg35ZGo5qy/7Vq/b8gwMlrH/CFoJowI
+PtkiH4SOhln86YsXZnDsGzvoKIdVYD9QgwnNZ3I+esScfyBLn5plzEs2nPN9bl/f
+AQZiBwIDAQABo20wazBKBgNVHREEQzBBghNncmlkMTAucmFjZi5ibmwuZ292hipo
+dHRwczovL2dyaWQxMC5yYWNmLmJubC5nb3YvaWRwL3NoaWJib2xldGgwHQYDVR0O
+BBYEFImPHcIrUuZBRXt7K6P6V0xK3zTNMA0GCSqGSIb3DQEBBQUAA4IBAQBun1do
+oahZYxfnFkoX/9n4QB/8vlYDbNRGn4581am+H1qM5gMBq6y/xenCFWLOUVqMTx7F
++wbNqqWFERy6qF2yfpa/YXW0JMM699G51xWC8SWKEauEgOKrZwetkvBEcCrcE03L
+8tZiJdxM7KjuEMJKoNH2+sctgA9Y7kMh48FFW071qSlJT7ajJu2mNIab6UJpqcNc
+NryTXjODF5+ddW7yC9CbJ47kN0uS7X3bryvRmc4M6LqcHqsEl4oprwv0U/qqo6Er
+qKKTgIOzVcrAEwSzuDMpkRjijzmH19jKdHOVM6YcDnbdT5SBn7KIWjZ3OMzqyLU9
+CHqbOG4QhX99o+gk
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
+                                   Location="https://grid10.racf.bnl.gov:8443/idp/profile/SAML1/SOAP/ArtifactResolution" 
+                                   index="1"/>
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                   Location="https://grid10.racf.bnl.gov:8443/idp/profile/SAML2/SOAP/ArtifactResolution" 
+                                   index="2"/>
+                          
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+        <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" 
+                             Location="https://grid10.racf.bnl.gov/idp/profile/Shibboleth/SSO" />
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+                             Location="https://grid10.racf.bnl.gov/idp/profile/SAML2/POST/SSO" />
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" 
+                             Location="https://grid10.racf.bnl.gov/idp/profile/SAML2/POST-SimpleSign/SSO" />
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" 
+                             Location="https://grid10.racf.bnl.gov/idp/profile/SAML2/Redirect/SSO" />
+    </IDPSSODescriptor>
+
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">bnl.gov</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIVAIMGPgn1hMKNL7cwT9gmQ5K6AWPIMA0GCSqGSIb3DQEB
+BQUAMB4xHDAaBgNVBAMTE2dyaWQxMC5yYWNmLmJubC5nb3YwHhcNMTQwNzI5MTg0
+ODA5WhcNMTcwNzI5MTg0ODA5WjAeMRwwGgYDVQQDExNncmlkMTAucmFjZi5ibmwu
+Z292MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqCtVb1OzpsGOT0t2
+WoRd07LKKsrhEKLJICDcfPST6GAW2N8bFtIE1X0YaRDfVPZAQzYqOrNNqcNPGtkE
+/bp1LESUiiuHTtKfChRHtYQlz+17dOtPYa+ZHGYRsmcAOopU70ppSE6th/v5ZSc8
+ne2SvfZHghJ/uymkbsUaverPlU5qql5UBdDFXnkIWWlyz2/ruUvr8O+soy1jUUFy
+ibEbHRVZaL+3ywrvJEREwgBjYlnnORYOejg35ZGo5qy/7Vq/b8gwMlrH/CFoJowI
+PtkiH4SOhln86YsXZnDsGzvoKIdVYD9QgwnNZ3I+esScfyBLn5plzEs2nPN9bl/f
+AQZiBwIDAQABo20wazBKBgNVHREEQzBBghNncmlkMTAucmFjZi5ibmwuZ292hipo
+dHRwczovL2dyaWQxMC5yYWNmLmJubC5nb3YvaWRwL3NoaWJib2xldGgwHQYDVR0O
+BBYEFImPHcIrUuZBRXt7K6P6V0xK3zTNMA0GCSqGSIb3DQEBBQUAA4IBAQBun1do
+oahZYxfnFkoX/9n4QB/8vlYDbNRGn4581am+H1qM5gMBq6y/xenCFWLOUVqMTx7F
++wbNqqWFERy6qF2yfpa/YXW0JMM699G51xWC8SWKEauEgOKrZwetkvBEcCrcE03L
+8tZiJdxM7KjuEMJKoNH2+sctgA9Y7kMh48FFW071qSlJT7ajJu2mNIab6UJpqcNc
+NryTXjODF5+ddW7yC9CbJ47kN0uS7X3bryvRmc4M6LqcHqsEl4oprwv0U/qqo6Er
+qKKTgIOzVcrAEwSzuDMpkRjijzmH19jKdHOVM6YcDnbdT5SBn7KIWjZ3OMzqyLU9
+CHqbOG4QhX99o+gk
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" 
+                          Location="https://grid10.racf.bnl.gov:8443/idp/profile/SAML1/SOAP/AttributeQuery" />
+        
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                          Location="https://grid10.racf.bnl.gov:8443/idp/profile/SAML2/SOAP/AttributeQuery" />
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        
+    </AttributeAuthorityDescriptor>
+    
+    <Organization>
+        <OrganizationName xml:lang="en">RHIC/ATLAS Computing Facility</OrganizationName>
+        <OrganizationDisplayName xml:lang="en">RHIC/ATLAS Computing Facility</OrganizationDisplayName>
+        <OrganizationURL xml:lang="en">http://www.racf.bnl.gov/</OrganizationURL>
+    </Organization>
+    <ContactPerson contactType="technical">
+        <GivenName>John</GivenName>
+        <SurName>Hover</SurName>
+        <EmailAddress>jhover@bnl.gov</EmailAddress>
+    </ContactPerson>
+
+  </EntityDescriptor>    
+
+
+
+<EntityDescriptor entityID="https://grid07.racf.bnl.gov/shibboleth"
+                  validUntil="2020-01-01T00:00:00Z">
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIDADCCAeigAwIBAgIJAI7ks0OhyayiMA0GCSqGSIb3DQEBBQUAMB4xHDAaBgNV
+BAMTE2dyaWQwNy5yYWNmLmJubC5nb3YwHhcNMTQwNzI1MTUyOTQ4WhcNMjQwNzIy
+MTUyOTQ4WjAeMRwwGgYDVQQDExNncmlkMDcucmFjZi5ibmwuZ292MIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp+A5G5jlYg9vKw8sltqCdcUYNCEJ4N0k
+RljJ7sUSNVFQ4mhdG3U9y8Ng284XeqaKB/d8t6oD+FFEN8S1ItwQOXcQ9yBGMkYl
+596/e3MbhPYbHlbmfezPWvHq0FpPinzab49zOzkwbJBjsH7vCxiBS+UiPXs06E7I
+wF4RGukUadnOu9nAF3/QG1XVXTp4VLI7wm500Gii5isD0BSvwGl6KKduelpzd2Ce
+7XN0MrjhWcBfBDTA7VGG7+KdXg/rSaSToK4grPChVqi7Y4qfwNpeyhKav5EnTZWN
+r2oElcMEFtBMfRohDqMsqjhWXJvTaU+FL6BY89FuCfBX9rQljDjXpwIDAQABo0Ew
+PzAeBgNVHREEFzAVghNncmlkMDcucmFjZi5ibmwuZ292MB0GA1UdDgQWBBRaWSHl
+hc+Fwa2yuhWktw1bcgAWwjANBgkqhkiG9w0BAQUFAAOCAQEAFEAKXFyUAbbxbn5z
+o9rmKR7j5EA90YqFl6Bi6FMSoVd5OlkImdHSbcSkgovo7qfOq6jy5pa31yzDEs+i
+Mr5qL75Dm/TKTC0zK18H5NnAIakOB2PCH3r1hCUF7hSShwTOkl4GSFL18nbQ0/TU
+SYIqAP3hteEuUoJYt5LGjJrb03U7ncA0fjmFLuX8mgAHrgshvWzUhkxkhOjEDqdA
+5Ce+0jetejQcYiXQYYJh5qESEph4TUc7Z4VZpbn7CmhpFwXMKuIedlvLbSslD0OW
+EpgLd6dpOTGO/qlBC9BZ3xEL5Ab8X96wCnTO9wExIaiYkyBkXSEJfzDXu8BLl0iv
+pnO4sQ==
+
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.rcf.bnl.gov/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.rcf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.rcf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.rcf.bnl.gov/Shibboleth.sso/SAML/POST" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.rcf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="5"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://network.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="6"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://network.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="7"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://network.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="8"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://network.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="9"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://network.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="10"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.rcf.bnl.gov/Shibboleth.sso/SAML2/POST" index="11"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.rcf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="12"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.rcf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="13"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://sp.rcf.bnl.gov/Shibboleth.sso/SAML/POST" index="14"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.rcf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="15"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webdocs.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="16"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://webdocs.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="17"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://webdocs.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="18"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://webdocs.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="19"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://webdocs.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="20"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://cacti.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="21"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://cacti.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="22"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://cacti.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="23"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://cacti.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="24"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://cacti.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="25"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://nagios.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="26"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://nagios.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="27"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://nagios.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="28"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://nagios.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="29"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://nagios.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="30"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://rt.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="31"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://rt.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="32"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://rt.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="33"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://rt.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="34"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://rt.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="35"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://web.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="36"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://web.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="37"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://web.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="38"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://web.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="39"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://web.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="40"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://test.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="36"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://test.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="37"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://test.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="38"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://test.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="39"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://test.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="40"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://git.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="41"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://git.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="42"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://git.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="43"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://git.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="44"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://git.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="45"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://puppet-phy.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="46"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://puppet-phy.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="47"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://puppet-phy.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="48"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://puppet-phy.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="49"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://puppet-phy.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="50"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://redmine.racf.bnl.gov/Shibboleth.sso/SAML2/POST" index="50"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://redmine.racf.bnl.gov/Shibboleth.sso/SAML2/POST-SimpleSign" index="51"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://redmine.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="52"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://redmine.racf.bnl.gov/Shibboleth.sso/SAML/POST" index="53"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://redmine.racf.bnl.gov/Shibboleth.sso/SAML2/ECP" index="54"/>
+  </SPSSODescriptor>
+
+  <Organization>
+    <OrganizationName xml:lang="en">Brookhaven National Laboratory</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">Brookhaven National Laboratory</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.bnl.gov/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>John</GivenName>
+    <SurName>Hover</SurName>
+    <EmailAddress>jhover@bnl.gov</EmailAddress>
+  </ContactPerson>
+
+</EntityDescriptor>
+
+</EntitiesDescriptor>

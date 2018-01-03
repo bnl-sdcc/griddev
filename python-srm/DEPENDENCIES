@@ -1,0 +1,19 @@
+SRM code dependencies
+=====================
+
+SRM version 1.1 support.
+
+
+* Globus libraries (for GSI)
+  Makefile uses $GLOBUS_LOCATION
+
+* CGSI plugin (dev)
+  > wget http://castor.web.cern.ch/castor/DIST/CERN/savannah/CGSI_gSOAP.pkg/2.6-1.1.9/CGSI_gSOAP_2.6-dev-1.1.9-1.slc3.i386.rpm
+  > rpm -Uvh CGSI_gSOAP_2.6-dev-1.1.9-1.slc3.i386.rpm
+
+  Makefile uses default location:
+  /usr/include/cgsi_plugin.h
+  /usr/lib/libcgsi_plugin_gsoap_2.6.a
+
+
+mbranco - 10 August 2005

@@ -1,0 +1,9 @@
+# This file is managed by Puppet - DO NOT EDIT!
+# Partitionable slots
+SLOT_TYPE_1 = 100%
+NUM_SLOTS = 1
+NUM_SLOTS_TYPE_1 = 1
+SLOT_TYPE_1_PARTITIONABLE = True
+SlotWeight = Cpus
+
+

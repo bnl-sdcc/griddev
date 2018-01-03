@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#
+# ...
+#
+
+#
+# chkconfig: 2345 99 01
+# description: Attempts to detect (and delay) EC2 shutdowns.
+#
+
+#
+### BEGIN INIT INFO
+# Provides:
+# Required-Start: $network $local_fs
+# Required-Stop: $local_fs $network
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Attempts to detect (and delay) EC2 shutdowns.
+# Description: Attempts to detect (and delay) EC2 shutdowns.
+### END INIT INFO
+#
+
+INIT_COMMAND=$1
+PIDFILE=/var/run/detect-shutdowns.pid
+LOCKFILE=/var/lock/subsys/detect-shutdowns
+
+case "${INIT_COMMAND}" in
+    'start')
+        #
+        # The FQDN may go away during shutdown, so cache it.
+        #
+        HOST=`hostname --fqdn` 
+
+        #
+        # To help detect precipate shutdowns, log whenever this script starts.
+        #
+        DATE=`date +%F`
+        TIME=`date +%T`
+        RUNLEVEL=`/sbin/runlevel | /bin/awk '{print $2}'`
+        /usr/bin/wget -o /dev/null -O /dev/null \
+            "http://rarhost-00.batlab.org/log/monitor-start?host=${HOST}&date=${DATE}&time=${TIME}&runlevel=${RUNLEVEL}"
+
+        #
+        # Fork off a shell daemon.
+        #
+        (
+            while /bin/true; do
+            	RUNLEVEL=`/sbin/runlevel | /bin/awk '{print $2}'`
+            	if [ ${RUNLEVEL} -eq 0 ]; then
+            		DATE=`date +%F`
+            		TIME=`date +%T`
+		            /usr/bin/wget -o /dev/null -O /dev/null \
+            			"http://rarhost-00.batlab.org/log/shutdown?host=${HOST}&date=${DATE}&time=${TIME}&runlevel=${RUNLEVEL}"
+            	fi
+            	sleep 1
+            done
+        ) < /dev/null > /dev/null 2> /dev/null &
+        
+        #
+	# We need to touch the lockfile in order to be shutdown.  *sigh*
+        #
+        CHILD_PID=$!
+	echo ${CHILD_PID} > ${PIDFILE}
+	touch ${LOCKFILE}
+    ;;
+    
+    'stop')
+        #
+        # Delay shutdown.
+        #
+        RUNLEVEL=`/sbin/runlevel | /bin/awk '{print $2}'`
+        if [ ${RUNLEVEL} = "0" ]; then
+            echo "Waiting for five minutes to delay shutdown."
+            sleep 300
+        fi
+        
+        #
+	# ...
+        #
+	kill `cat ${PIDFILE}`
+	rm -f ${LOGFILE}
+        exit 0            
+    ;;
+    
+    *)
+    echo "Uknown command '${INIT_COMMAND}'."
+    exit 1
+    ;;
+esac

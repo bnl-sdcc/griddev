@@ -1,0 +1,1239 @@
+version: 2
+
+#
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# BNL-LCG2, grid
+dn: mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam, BNL-LCG2, grid
+dn: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam,mds-v
+ o-name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueCE
+objectClass: GlueSchemaVersion
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueInformationService
+objectClass: GlueKey
+GlueCEHostingCluster: lcg01.usatlas.bnl.gov
+GlueCEName: dteam
+GlueCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoHostName: lcg01.usatlas.bnl.gov
+GlueCEInfoLRMSType: condor
+GlueCEInfoLRMSVersion: 6.7.10
+GlueCEInfoTotalCPUs: 4730
+GlueCEInfoJobManager: lcgcondor
+GlueCEInfoContactString: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft
+GlueCEInfoDataDir: /usatlas/scratch
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateFreeCPUs: 3178
+GlueCEStateRunningJobs: 3987
+GlueCEStateStatus: Production
+GlueCEStateTotalJobs: 17064
+GlueCEStateWaitingJobs: 13077
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEStateFreeJobSlots: 0
+GlueCEPolicyMaxCPUTime: 120
+GlueCEPolicyMaxRunningJobs: 20000
+GlueCEPolicyMaxTotalJobs: 30000
+GlueCEPolicyMaxWallClockTime: 240
+GlueCEPolicyPriority: 1
+GlueCEPolicyAssignedJobSlots: 2
+GlueCEAccessControlBaseRule: VO:dteam
+GlueForeignKey: GlueClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueInformationServiceURL: ldap://lcg01.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas, BNL-LCG2, grid
+dn: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas,mds-v
+ o-name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueCE
+objectClass: GlueSchemaVersion
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueInformationService
+objectClass: GlueKey
+GlueCEHostingCluster: lcg01.usatlas.bnl.gov
+GlueCEName: atlas
+GlueCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoHostName: lcg01.usatlas.bnl.gov
+GlueCEInfoLRMSType: condor
+GlueCEInfoLRMSVersion: 6.7.10
+GlueCEInfoTotalCPUs: 4730
+GlueCEInfoJobManager: lcgcondor
+GlueCEInfoContactString: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft
+GlueCEInfoDataDir: /usatlas/scratch
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateFreeCPUs: 3178
+GlueCEStateRunningJobs: 3987
+GlueCEStateStatus: Production
+GlueCEStateTotalJobs: 17064
+GlueCEStateWaitingJobs: 13077
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEStateFreeJobSlots: 0
+GlueCEPolicyMaxCPUTime: 120
+GlueCEPolicyMaxRunningJobs: 20000
+GlueCEPolicyMaxTotalJobs: 30000
+GlueCEPolicyMaxWallClockTime: 240
+GlueCEPolicyPriority: 1
+GlueCEPolicyAssignedJobSlots: 2
+GlueCEAccessControlBaseRule: VO:atlas
+GlueForeignKey: GlueClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueInformationServiceURL: ldap://lcg01.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops, BNL-LCG2, grid
+dn: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops,mds-vo-
+ name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueCE
+objectClass: GlueSchemaVersion
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueInformationService
+objectClass: GlueKey
+GlueCEHostingCluster: lcg01.usatlas.bnl.gov
+GlueCEName: ops
+GlueCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoHostName: lcg01.usatlas.bnl.gov
+GlueCEInfoLRMSType: condor
+GlueCEInfoLRMSVersion: 6.7.10
+GlueCEInfoTotalCPUs: 4730
+GlueCEInfoJobManager: lcgcondor
+GlueCEInfoContactString: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft
+GlueCEInfoDataDir: /usatlas/scratch
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateFreeCPUs: 3178
+GlueCEStateRunningJobs: 3987
+GlueCEStateStatus: Production
+GlueCEStateTotalJobs: 17064
+GlueCEStateWaitingJobs: 13077
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEStateFreeJobSlots: 0
+GlueCEPolicyMaxCPUTime: 120
+GlueCEPolicyMaxRunningJobs: 20000
+GlueCEPolicyMaxTotalJobs: 30000
+GlueCEPolicyMaxWallClockTime: 240
+GlueCEPolicyPriority: 1
+GlueCEPolicyAssignedJobSlots: 2
+GlueCEAccessControlBaseRule: VO:ops
+GlueForeignKey: GlueClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueInformationServiceURL: ldap://lcg01.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# dteam, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam, BNL-LCG2, gri
+ d
+dn: GlueVOViewLocalID=dteam,GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanag
+ er-lcgcondor-dteam,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueVOView
+objectClass: GlueCEInfo
+objectClass: GlueCEState
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEPolicy
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueVOViewLocalID: dteam
+GlueCEAccessControlBaseRule: VO:dteam
+GlueCEStateRunningJobs: 0
+GlueCEStateWaitingJobs: 0
+GlueCEStateTotalJobs: 0
+GlueCEStateFreeJobSlots: 0
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft/dteam
+GlueCEInfoDataDir: /usatlas/scratch
+GlueChunkKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-d
+ team
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# atlas, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas, BNL-LCG2, gri
+ d
+dn: GlueVOViewLocalID=atlas,GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanag
+ er-lcgcondor-atlas,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueVOView
+objectClass: GlueCEInfo
+objectClass: GlueCEState
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEPolicy
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueVOViewLocalID: atlas
+GlueCEAccessControlBaseRule: VO:atlas
+GlueCEStateRunningJobs: 0
+GlueCEStateWaitingJobs: 0
+GlueCEStateTotalJobs: 0
+GlueCEStateFreeJobSlots: 0
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft/atlas
+GlueCEInfoDataDir: /usatlas/scratch
+GlueChunkKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-a
+ tlas
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# ops, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops, BNL-LCG2, grid
+dn: GlueVOViewLocalID=ops,GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager
+ -lcgcondor-ops,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueCETop
+objectClass: GlueVOView
+objectClass: GlueCEInfo
+objectClass: GlueCEState
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEPolicy
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueVOViewLocalID: ops
+GlueCEAccessControlBaseRule: VO:ops
+GlueCEStateRunningJobs: 0
+GlueCEStateWaitingJobs: 0
+GlueCEStateTotalJobs: 0
+GlueCEStateFreeJobSlots: 0
+GlueCEStateEstimatedResponseTime: 2146660842
+GlueCEStateWorstResponseTime: 2146660842
+GlueCEInfoDefaultSE: lcg03.usatlas.bnl.gov
+GlueCEInfoApplicationDir: /usatlas/grid/exp_soft/ops
+GlueCEInfoDataDir: /usatlas/scratch
+GlueChunkKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-o
+ ps
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam, BNL-LCG2, grid
+dn: GlueCESEBindGroupCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondo
+ r-dteam,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBindGroup
+objectClass: GlueSchemaVersion
+GlueCESEBindGroupCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-d
+ team
+GlueCESEBindGroupSEUniqueID: lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas, BNL-LCG2, grid
+dn: GlueCESEBindGroupCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondo
+ r-atlas,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBindGroup
+objectClass: GlueSchemaVersion
+GlueCESEBindGroupCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-a
+ tlas
+GlueCESEBindGroupSEUniqueID: lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops, BNL-LCG2, grid
+dn: GlueCESEBindGroupCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondo
+ r-ops,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBindGroup
+objectClass: GlueSchemaVersion
+GlueCESEBindGroupCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-o
+ ps
+GlueCESEBindGroupSEUniqueID: lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg03.usatlas.bnl.gov, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dtea
+ m, BNL-LCG2, grid
+dn: GlueCESEBindSEUniqueID=lcg03.usatlas.bnl.gov,GlueCESEBindGroupCEUniqueID=l
+ cg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam,mds-vo-name=BNL-LCG2,o=g
+ rid
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBind
+objectClass: GlueSchemaVersion
+GlueCESEBindSEUniqueID: lcg03.usatlas.bnl.gov
+GlueCESEBindCEAccesspoint: /home/storage
+GlueCESEBindCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam
+GlueCESEBindMountInfo: /home/storage
+GlueCESEBindWeight: 0
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg03.usatlas.bnl.gov, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atla
+ s, BNL-LCG2, grid
+dn: GlueCESEBindSEUniqueID=lcg03.usatlas.bnl.gov,GlueCESEBindGroupCEUniqueID=l
+ cg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas,mds-vo-name=BNL-LCG2,o=g
+ rid
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBind
+objectClass: GlueSchemaVersion
+GlueCESEBindSEUniqueID: lcg03.usatlas.bnl.gov
+GlueCESEBindCEAccesspoint: /home/storage
+GlueCESEBindCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas
+GlueCESEBindMountInfo: /home/storage
+GlueCESEBindWeight: 0
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg03.usatlas.bnl.gov, lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops,
+  BNL-LCG2, grid
+dn: GlueCESEBindSEUniqueID=lcg03.usatlas.bnl.gov,GlueCESEBindGroupCEUniqueID=l
+ cg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops,mds-vo-name=BNL-LCG2,o=gri
+ d
+objectClass: GlueGeneralTop
+objectClass: GlueCESEBind
+objectClass: GlueSchemaVersion
+GlueCESEBindSEUniqueID: lcg03.usatlas.bnl.gov
+GlueCESEBindCEAccesspoint: /home/storage
+GlueCESEBindCEUniqueID: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops
+GlueCESEBindMountInfo: /home/storage
+GlueCESEBindWeight: 0
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueCluster
+objectClass: GlueSchemaVersion
+objectClass: GlueInformationService
+objectClass: GlueKey
+GlueClusterName: lcg01.usatlas.bnl.gov
+GlueClusterService: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-dteam
+GlueClusterService: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas
+GlueClusterService: lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-ops
+GlueClusterUniqueID: lcg01.usatlas.bnl.gov
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -dteam
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -atlas
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -dteam
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -atlas
+GlueForeignKey: GlueCEUniqueID=lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor
+ -ops
+GlueInformationServiceURL: ldap://lcg01.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov,GlueClusterUniqueID=lcg01.usa
+ tlas.bnl.gov,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueSubCluster
+objectClass: GlueSchemaVersion
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+GlueChunkKey: GlueClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_1_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_1_1
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_2_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_3_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_3_1
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_4_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_5_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_6_0
+GlueHostApplicationSoftwareRunTimeEnvironment: LCG-2_7_0
+GlueHostApplicationSoftwareRunTimeEnvironment: GLITE-3_0_0
+GlueHostApplicationSoftwareRunTimeEnvironment: R-GMA
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-atlas-offline-12.0.1
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-atlas-release-11.0.42
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-atlas-release-11.0.5
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-atlas-offline-12.0.2
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-atlas-production-12.0.3
+GlueHostArchitectureSMPSize: 2
+GlueHostBenchmarkSF00: 0
+GlueHostBenchmarkSI00: 381
+GlueHostMainMemoryRAMSize: 1024
+GlueHostMainMemoryVirtualSize: 4096
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueHostOperatingSystemName: Scientific Linux
+GlueHostOperatingSystemRelease: 3.0.5
+GlueHostOperatingSystemVersion: SL
+GlueHostProcessorClockSpeed: 1001
+GlueHostProcessorModel: PIII
+GlueHostProcessorVendor: intel
+GlueSubClusterName: lcg01.usatlas.bnl.gov
+GlueSubClusterUniqueID: lcg01.usatlas.bnl.gov
+GlueSubClusterPhysicalCPUs: 0
+GlueSubClusterLogicalCPUs: 0
+GlueSubClusterTmpDir: /tmp
+GlueSubClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://lcg01.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg01.usatlas.bnl.gov:7512, BNL-LCG2, grid
+dn: GlueServiceUniqueID=lcg01.usatlas.bnl.gov:7512,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: lcg01.usatlas.bnl.gov:7512
+GlueServiceName: BNL-LCG2-myproxy
+GlueServiceType: MyProxy
+GlueServiceVersion: 1.1.0
+GlueServiceEndpoint: lcg01.usatlas.bnl.gov:7512
+GlueServiceURI: unset
+GlueServiceAccessPointURL: myproxy://lcg01.usatlas.bnl.gov
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: LCG
+GlueServiceAccessControlRule: /DC=org/DC=doegrids/OU=Services/CN=lcg02.usatlas
+ .bnl.gov
+GlueServiceAccessControlRule: /DC=org/DC=doegrids/OU=Services/CN=lcg01.usatlas
+ .bnl.gov
+GlueServiceAccessControlRule: /DC=org/DC=doegrids/OU=Services/CN=lcg04.usatlas
+ .bnl.gov
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# BNL-LCG2, BNL-LCG2, grid
+dn: GlueSiteUniqueID=BNL-LCG2,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteUniqueID: BNL-LCG2
+GlueSiteName: BNL-LCG2
+GlueSiteDescription: LCG Site
+GlueSiteUserSupportContact: mailto: racf-grid-admin-l@lists.bnl.gov
+GlueSiteSysAdminContact: mailto: racf-grid-admin-l@lists.bnl.gov
+GlueSiteSecurityContact: mailto: racf-grid-admin-l@lists.bnl.gov
+GlueSiteLocation: Upton New York, USA
+GlueSiteLatitude: 40.8684
+GlueSiteLongitude: -72.8783
+GlueSiteWeb: http://www.usatlas.bnl.gov
+GlueSiteSponsor: none
+GlueSiteOtherInfo: TIER 1
+GlueSiteOtherInfo: atlas.web.cern.ch
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# VO-atlas-offline-12.0.1, lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, BNL-
+ LCG2, grid
+dn: GlueLocationLocalID=VO-atlas-offline-12.0.1,GlueSubClusterUniqueID=lcg01.u
+ satlas.bnl.gov,GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-LCG2
+ ,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueLocationLocalID: VO-atlas-offline-12.0.1
+GlueLocationName: VO-atlas-offline-12.0.1
+GlueLocationVersion: Prod
+GlueLocationPath: $VO_ATLAS_SW_DIR
+GlueChunkKey: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# VO-atlas-release-11.0.42, lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, BNL
+ -LCG2, grid
+dn: GlueLocationLocalID=VO-atlas-release-11.0.42,GlueSubClusterUniqueID=lcg01.
+ usatlas.bnl.gov,GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-LCG
+ 2,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueLocationLocalID: VO-atlas-release-11.0.42
+GlueLocationName: VO-atlas-release-11.0.42
+GlueLocationVersion: Prod
+GlueLocationPath: $VO_ATLAS_SW_DIR
+GlueChunkKey: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# VO-atlas-release-11.0.5, lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, BNL-
+ LCG2, grid
+dn: GlueLocationLocalID=VO-atlas-release-11.0.5,GlueSubClusterUniqueID=lcg01.u
+ satlas.bnl.gov,GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-LCG2
+ ,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueLocationLocalID: VO-atlas-release-11.0.5
+GlueLocationName: VO-atlas-release-11.0.5
+GlueLocationVersion: Prod
+GlueLocationPath: $VO_ATLAS_SW_DIR
+GlueChunkKey: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# VO-atlas-offline-12.0.2, lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, BNL-
+ LCG2, grid
+dn: GlueLocationLocalID=VO-atlas-offline-12.0.2,GlueSubClusterUniqueID=lcg01.u
+ satlas.bnl.gov,GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-LCG2
+ ,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueLocationLocalID: VO-atlas-offline-12.0.2
+GlueLocationName: VO-atlas-offline-12.0.2
+GlueLocationVersion: Prod
+GlueLocationPath: $VO_ATLAS_SW_DIR
+GlueChunkKey: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# VO-atlas-production-12.0.3, lcg01.usatlas.bnl.gov, lcg01.usatlas.bnl.gov, B
+ NL-LCG2, grid
+dn: GlueLocationLocalID=VO-atlas-production-12.0.3,GlueSubClusterUniqueID=lcg0
+ 1.usatlas.bnl.gov,GlueClusterUniqueID=lcg01.usatlas.bnl.gov,mds-vo-name=BNL-L
+ CG2,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueLocationLocalID: VO-atlas-production-12.0.3
+GlueLocationName: VO-atlas-production-12.0.3
+GlueLocationVersion: Prod
+GlueLocationPath: $VO_ATLAS_SW_DIR
+GlueChunkKey: GlueSubClusterUniqueID=lcg01.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg03.usatlas.bnl.gov:2136, BNL-LCG2, grid
+dn: GlueServiceUniqueID=lcg03.usatlas.bnl.gov:2136,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: lcg03.usatlas.bnl.gov:2136
+GlueServiceName: BNL-LCG2-gridice
+GlueServiceType: gridice
+GlueServiceVersion: 1.1.0
+GlueServiceEndpoint: ldap://lcg03.usatlas.bnl.gov:2136/mds-vo-name=local,o=gri
+ d
+GlueServiceURI: unset
+GlueServiceAccessPointURL: not_used
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: dteam
+GlueServiceOwner: atlas
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEUniqueID=lcg03.usatlas.bnl.gov,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSE
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEUniqueID: lcg03.usatlas.bnl.gov
+GlueSEName: BNL-LCG2:disk
+GlueSEPort: 2811
+GlueSESizeTotal: 0
+GlueSESizeFree: 0
+GlueSEArchitecture: disk
+GlueInformationServiceURL: ldap://lcg03.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# gsiftp, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEAccessProtocolLocalID=gsiftp,GlueSEUniqueID=lcg03.usatlas.bnl.gov,md
+ s-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEAccessProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEAccessProtocolLocalID: gsiftp
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://lcg03.usatlas.bnl.gov
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: GSI
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# rfio, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEAccessProtocolLocalID=rfio,GlueSEUniqueID=lcg03.usatlas.bnl.gov,mds-
+ vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEAccessProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEAccessProtocolLocalID: rfio
+GlueSEAccessProtocolType: rfio
+GlueSEAccessProtocolEndpoint: classic
+GlueSEAccessProtocolCapability: byte access
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolPort: 5001
+GlueSEAccessProtocolSupportedSecurity: RFIO
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# classic, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEControlProtocolLocalID=classic,GlueSEUniqueID=lcg03.usatlas.bnl.gov,
+ mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEControlProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEControlProtocolLocalID: classic
+GlueSEControlProtocolType: classic
+GlueSEControlProtocolEndpoint: classic
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 1.0.0
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# dteam, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=dteam,GlueSEUniqueID=lcg03.usatlas.bnl.gov,mds-vo-name=BNL-L
+ CG2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: dteam:dteam
+GlueSAPath: /home/storage/dteam
+GlueSAType: permanent
+GlueSALocalID: dteam
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 195554740
+GlueSAStateUsedSpace: 12943352
+GlueSAAccessControlBaseRule: dteam
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# atlas, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=atlas,GlueSEUniqueID=lcg03.usatlas.bnl.gov,mds-vo-name=BNL-L
+ CG2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: atlas:atlas
+GlueSAPath: /home/storage/atlas
+GlueSAType: permanent
+GlueSALocalID: atlas
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 195554740
+GlueSAStateUsedSpace: 12943352
+GlueSAAccessControlBaseRule: atlas
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# ops, lcg03.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=ops,GlueSEUniqueID=lcg03.usatlas.bnl.gov,mds-vo-name=BNL-LCG
+ 2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: ops:ops
+GlueSAPath: /home/storage/ops
+GlueSAType: permanent
+GlueSALocalID: ops
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 195554740
+GlueSAStateUsedSpace: 12943352
+GlueSAAccessControlBaseRule: ops
+GlueChunkKey: GlueSEUniqueID=lcg03.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.FileTransfer, BNL-L
+ CG2, grid
+dn: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glit
+ e.FileTransfer,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueServiceUniqueID: glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.F
+ ileTransfer
+GlueServiceName: glite-data-transfer-fts_lcg03.usatlas.bnl.gov
+GlueServiceType: org.glite.FileTransfer
+GlueServiceVersion: 3.2.0
+GlueServiceEndpoint: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-ft
+ s/services/FileTransfer
+GlueServiceWSDL: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-fts/se
+ rvices/FileTransfer?wsdl
+GlueServiceAccessPointURL: https://lcg03.usatlas.bnl.gov:8443/glite-data-trans
+ fer-fts/services/FileTransfer?wsdl
+GlueServiceSemantics: normal
+GlueServiceStartTime: 2006-10-06 11:17:19.000000000 -0400
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.ChannelManagement
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransferStats
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.Delegation
+GlueForeignKey: GlueSiteUniqueId=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+
+# glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.ChannelManagement, 
+ BNL-LCG2, grid
+dn: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glit
+ e.ChannelManagement,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueServiceUniqueID: glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.C
+ hannelManagement
+GlueServiceName: glite-data-transfer-fts_lcg03.usatlas.bnl.gov-channel
+GlueServiceType: org.glite.ChannelManagement
+GlueServiceVersion: 3.2.0
+GlueServiceEndpoint: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-ft
+ s/services/ChannelManagement
+GlueServiceWSDL: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-fts/se
+ rvices/ChannelManagement?wsdl
+GlueServiceAccessPointURL: https://lcg03.usatlas.bnl.gov:8443/glite-data-trans
+ fer-fts/services/ChannelManagement?wsdl
+GlueServiceSemantics: normal
+GlueServiceStartTime: 2006-10-06 11:17:19.000000000 -0400
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransfer
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransferStats
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.Delegation
+GlueForeignKey: GlueSiteUniqueId=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+
+# glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.FileTransferStats, 
+ BNL-LCG2, grid
+dn: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glit
+ e.FileTransferStats,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueServiceUniqueID: glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.F
+ ileTransferStats
+GlueServiceName: glite-data-transfer-fts_lcg03.usatlas.bnl.gov-stats
+GlueServiceType: org.glite.FileTransferStats
+GlueServiceVersion: 3.2.0
+GlueServiceEndpoint: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-ft
+ s/services/FileTransferStats
+GlueServiceWSDL: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-fts/se
+ rvices/FileTransferStats?wsdl
+GlueServiceAccessPointURL: https://lcg03.usatlas.bnl.gov:8443/glite-data-trans
+ fer-fts/services/FileTransferStats?wsdl
+GlueServiceSemantics: normal
+GlueServiceStartTime: 2006-10-06 11:17:19.000000000 -0400
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransfer
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.ChannelManagement
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.Delegation
+GlueForeignKey: GlueSiteUniqueId=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+
+# glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.Delegation, BNL-LCG
+ 2, grid
+dn: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glit
+ e.Delegation,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueSchemaVersion
+objectClass: GlueKey
+GlueServiceUniqueID: glite-data-transfer-fts_lcg03.usatlas.bnl.gov_org.glite.D
+ elegation
+GlueServiceName: glite-data-transfer-fts_lcg03.usatlas.bnl.gov-stats
+GlueServiceType: org.glite.Delegation
+GlueServiceVersion: 3.2.0
+GlueServiceEndpoint: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-ft
+ s/services/Delegation
+GlueServiceWSDL: https://lcg03.usatlas.bnl.gov:8443/glite-data-transfer-fts/se
+ rvices/Delegation?wsdl
+GlueServiceAccessPointURL: https://lcg03.usatlas.bnl.gov:8443/glite-data-trans
+ fer-fts/services/Delegation?wsdl
+GlueServiceSemantics: normal
+GlueServiceStartTime: 2006-10-06 11:17:19.000000000 -0400
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransfer
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.FileTransferStats
+GlueForeignKey: GlueServiceUniqueID=glite-data-transfer-fts_lcg03.usatlas.bnl.
+ gov_org.glite.ChannelManagement
+GlueForeignKey: GlueSiteUniqueId=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+
+# http://lcg04.usatlas.bnl.gov:8085/, local, BNL-LCG2, grid
+dn: GlueServiceUniqueID=http://lcg04.usatlas.bnl.gov:8085/,o=local,mds-vo-name
+ =BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: http://lcg04.usatlas.bnl.gov:8085/
+GlueServiceName: BNL-LCG2-lfc-dli
+GlueServiceType: local-data-location-interface
+GlueServiceVersion: 1.0.0
+GlueServiceEndpoint: http://lcg04.usatlas.bnl.gov:8085/
+GlueServiceURI: http://lcg04.usatlas.bnl.gov:8085/
+GlueServiceAccessPointURL: http://lcg04.usatlas.bnl.gov:8085/
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg04.usatlas.bnl.gov, local, BNL-LCG2, grid
+dn: GlueServiceUniqueID=lcg04.usatlas.bnl.gov,o=local,mds-vo-name=BNL-LCG2,o=g
+ rid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: lcg04.usatlas.bnl.gov
+GlueServiceName: BNL-LCG2-lfc
+GlueServiceType: lcg-local-file-catalog
+GlueServiceVersion: 1.0.0
+GlueServiceEndpoint: lcg04.usatlas.bnl.gov
+GlueServiceURI: lcg04.usatlas.bnl.gov
+GlueServiceAccessPointURL: lcg04.usatlas.bnl.gov
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: atlas
+GlueServiceOwner: dteam
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceUniqueID=lcg04.usatlas.bnl.gov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: lcg04.usatlas.bnl.gov:7772
+GlueServiceName: BNL-LCG2-rb
+GlueServiceType: ResourceBroker
+GlueServiceVersion: 1.2.0
+GlueServiceEndpoint: lcg04.usatlas.bnl.gov:7772
+GlueServiceURI: unset
+GlueServiceAccessPointURL: not_used
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: dteam
+GlueServiceOwner: atlas
+GlueServiceOwner: ops
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# HeldJobs, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=HeldJobs,GlueServiceUniqueID=gram://lcg04.usatlas.bnl.g
+ ov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: HeldJobs
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# IdleJobs, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=IdleJobs,GlueServiceUniqueID=gram://lcg04.usatlas.bnl.g
+ ov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: IdleJobs
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# JobController, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=JobController,GlueServiceUniqueID=gram://lcg04.usatlas.
+ bnl.gov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: JobController
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# Jobs, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=Jobs,GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7
+ 772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: Jobs
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# LogMonitor, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=LogMonitor,GlueServiceUniqueID=gram://lcg04.usatlas.bnl
+ .gov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: LogMonitor
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# RunningJobs, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=RunningJobs,GlueServiceUniqueID=gram://lcg04.usatlas.bn
+ l.gov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: RunningJobs
+GlueServiceDataValue: 14
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# WorkloadManager, gram://lcg04.usatlas.bnl.gov:7772, BNL-LCG2, grid
+dn: GlueServiceDataKey=WorkloadManager,GlueServiceUniqueID=gram://lcg04.usatla
+ s.bnl.gov:7772,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueServiceData
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceDataKey: WorkloadManager
+GlueServiceDataValue: 0
+GlueChunkKey: GlueServiceUniqueID=gram://lcg04.usatlas.bnl.gov:7772
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1, BNL-LCG2, grid
+dn: GlueServiceUniqueID=httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1,mds-v
+ o-name=BNL-LCG2,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueServiceUniqueID: httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1
+GlueServiceName: BNL-LCG2-srm
+GlueServiceType: srm_v1
+GlueServiceVersion: 1.1.0
+GlueServiceEndpoint: httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1
+GlueServiceURI: httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1
+GlueServiceAccessPointURL: httpg://dcsrm.usatlas.bnl.gov:8443/srm/managerv1
+GlueServiceStatus: OK
+GlueServiceStatus: OK
+GlueServiceStatusInfo: No Problems
+GlueServiceWSDL: unset
+GlueServiceSemantics: unset
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceOwner: LCG
+GlueServiceAccessControlRule: dteam
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: ops
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEUniqueID=dcsrm.usatlas.bnl.gov,mds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSE
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEUniqueID: dcsrm.usatlas.bnl.gov
+GlueSEName: BNL-LCG2:srm_v1
+GlueSEPort: 2811
+GlueSESizeTotal: 0
+GlueSESizeFree: 0
+GlueSEArchitecture: multidisk
+GlueInformationServiceURL: ldap://dcsrm.usatlas.bnl.gov:2135/mds-vo-name=local
+ ,o=grid
+GlueForeignKey: GlueSiteUniqueID=BNL-LCG2
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# gsiftp, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEAccessProtocolLocalID=gsiftp,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,md
+ s-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEAccessProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEAccessProtocolLocalID: gsiftp
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://dcsrm.usatlas.bnl.gov
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: GSI
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# gsidcap, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEAccessProtocolLocalID=gsidcap,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,m
+ ds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEAccessProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEAccessProtocolLocalID: gsidcap
+GlueSEAccessProtocolType: gsidcap
+GlueSEAccessProtocolEndpoint: httpg://dcsrm.usatlas.bnl.gov
+GlueSEAccessProtocolCapability: byte access
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolPort: 22128
+GlueSEAccessProtocolSupportedSecurity: GSIDCAP
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# srm_v1, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSEControlProtocolLocalID=srm_v1,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,m
+ ds-vo-name=BNL-LCG2,o=grid
+objectClass: GlueSETop
+objectClass: GlueSEControlProtocol
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSEControlProtocolLocalID: srm_v1
+GlueSEControlProtocolType: srm_v1
+GlueSEControlProtocolEndpoint: httpg://dcsrm.usatlas.bnl.gov
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 1.0.0
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# dteam, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=dteam,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,mds-vo-name=BNL-L
+ CG2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: dteam:/pnfs/usatlas.bnl.gov/grid/dteam
+GlueSAPath: /pnfs/usatlas.bnl.gov/grid/dteam
+GlueSAType: permanent
+GlueSALocalID: dteam
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 1
+GlueSAStateUsedSpace: 1
+GlueSAAccessControlBaseRule: dteam
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# ops, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=ops,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,mds-vo-name=BNL-LCG
+ 2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: ops:/pnfs/usatlas.bnl.gov/grid/ops
+GlueSAPath: /pnfs/usatlas.bnl.gov/grid/ops
+GlueSAType: permanent
+GlueSALocalID: ops
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 1
+GlueSAStateUsedSpace: 1
+GlueSAAccessControlBaseRule: ops
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# atlas, dcsrm.usatlas.bnl.gov, BNL-LCG2, grid
+dn: GlueSALocalID=atlas,GlueSEUniqueID=dcsrm.usatlas.bnl.gov,mds-vo-name=BNL-L
+ CG2,o=grid
+objectClass: GlueSATop
+objectClass: GlueSA
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSAAccessControlBase
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSARoot: atlas:/pnfs/usatlas.bnl.gov/grid/atlas
+GlueSAPath: /pnfs/usatlas.bnl.gov/grid/atlas
+GlueSAType: permanent
+GlueSALocalID: atlas
+GlueSAPolicyMaxFileSize: 10000
+GlueSAPolicyMinFileSize: 1
+GlueSAPolicyMaxData: 100
+GlueSAPolicyMaxNumFiles: 10
+GlueSAPolicyMaxPinDuration: 10
+GlueSAPolicyQuota: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAStateAvailableSpace: 1
+GlueSAStateUsedSpace: 1
+GlueSAAccessControlBaseRule: atlas
+GlueChunkKey: GlueSEUniqueID=dcsrm.usatlas.bnl.gov
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 2
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 53
+# numEntries: 52

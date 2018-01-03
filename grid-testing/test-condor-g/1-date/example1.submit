@@ -1,0 +1,9 @@
+executable = /bin/date
+Transfer_Executable = false
+globusscheduler = gridgk02.racf.bnl.gov/jobmanager-fork
+universe = grid
+output = date.out
+error= date.error
+log = date.log
+queue
+

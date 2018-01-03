@@ -1,0 +1,16 @@
+#
+# sysconfig for userinit
+#
+
+#
+# The directory within which every directory will be checked for presence
+# of USERINIT_INITDIR
+#
+USERINIT_HOMEROOT=/home
+
+#
+# The directory within the USERINIT_HOMEROOT within which user
+# init scripts will be run.
+# 
+#
+USERINIT_INITDIR=/etc/init.d/

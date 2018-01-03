@@ -1,0 +1,88 @@
+name: fc16-x86_64-base
+summary: Base Fedora Core 16 general-purpose cloud usage with utilities.
+version: 1
+release: 0
+os:
+  name: fedora
+  version: 16
+  password: griddev
+  
+hardware:
+  cpus: 1
+  memory: 1024
+  partitions:
+    "/":
+      size: 8
+      
+packages:
+  - bind-utils
+  - cloud-init
+  - dhclient
+  - kernel
+  - lsof
+  - ntp
+  - openssh-clients
+  - openssh-server
+  - subversion
+  - telnet
+  - vim-enhanced
+  - wget
+  - yum
+  - bash
+  - e2fsprogs
+  - passwd
+  - policycoreutils
+  - chkconfig
+  - rootfiles
+  - yum
+  - acpid
+  - dhclient
+  - iputils
+  - openssh-server
+  - openssh-clients
+
+
+ 
+default_repos: false # default is true
+
+repos:
+
+  - name: "fc16-x86_64-releases"
+    baseurl: "http://mirror.bnl.gov/fedora/releases/16/Everything/x86_64/os"
+
+  - name: "fc16-x86_64-updates"
+    baseurl: "http://mirror.bnl.gov/fedora/updates/16/x86_64"
+	
+ 
+files:
+
+  "/root/.ssh":
+    - "authorized_keys"
+
+  "/etc":
+# Adjust lfc and dcsrm IPs in hosts. This should really bin the atlas wn. 
+#    - "rc.d/rc.local"      
+    - "ntp/step-tickers"
+    - "sysconfig/selinux"
+    - "profile.d/proxy.sh"
+    - "ssh/sshd_config"
+    - "init.d/cloudconfig"
+    - "sysconfig/cloudconfig"
+    - "modprobe.d/xenblk.conf"
+      
+post:
+  base:
+    - "chmod +x /etc/init.d/cloudconfig"   
+    - "/sbin/chkconfig cloudconfig on"
+  
+# SSH
+    - "chown -R root:root /root/.ssh"  
+    - "chmod -R go-rwx /root/.ssh"
+#    - "chmod +x /etc/rc.local"
+#    - "/bin/systemctl enable  sshd.service"
+#    - "/sbin/chkconfig sshd on"
+#    - "/sbin/chkconfig ntpd on"
+#    - "/sbin/chkconfig iptables off"
+#    - "/sbin/chkconfig ip6tables off"
+
+

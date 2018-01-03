@@ -1,0 +1,181 @@
+[Wed Oct 17 14:40:41 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:40:41 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:40:41 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:40:41 2007] [notice] Digest: done
+[Wed Oct 17 14:40:41 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:40:41 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:42:51 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 14:53:45 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:53:45 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:53:45 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:53:45 2007] [notice] Digest: done
+[Wed Oct 17 14:53:45 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:53:45 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:54:25 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/favicon.ico
+[Wed Oct 17 14:56:07 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 14:56:11 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:56:11 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:56:11 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:56:11 2007] [notice] Digest: done
+[Wed Oct 17 14:56:11 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:56:11 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:57:04 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 14:57:04 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:57:04 2007] [notice] Digest: done
+[Wed Oct 17 14:57:04 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:57:04 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:59:14 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 14:59:14 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:59:14 2007] [notice] Digest: done
+[Wed Oct 17 14:59:14 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:59:14 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp: Traceback (most recent call last):
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 291, in HandlerDispatch\n    arg=req, silent=hlist.silent)
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 531, in resolve_object\n    raise AttributeError, s
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp: AttributeError: module '/home/jhover/devel/mod-python-template/testmodp.pyc' contains no 'handler'
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp: Traceback (most recent call last):
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 291, in HandlerDispatch\n    arg=req, silent=hlist.silent)
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 531, in resolve_object\n    raise AttributeError, s
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp: AttributeError: module '/home/jhover/devel/mod-python-template/testmodp.pyc' contains no 'handler'
+[Wed Oct 17 15:02:05 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:02:05 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:02:05 2007] [notice] Digest: done
+[Wed Oct 17 15:02:05 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:02:05 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:02:10 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:02:30 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:02:40 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:04:40 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:04:41 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:04:41 2007] [notice] Digest: done
+[Wed Oct 17 15:04:41 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:04:41 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:04:53 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:05:01 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:05:04 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:06:04 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 15:06:08 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 15:06:08 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 15:06:08 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:06:08 2007] [notice] Digest: done
+[Wed Oct 17 15:06:08 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:06:08 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:08:51 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 15:08:52 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 15:08:52 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 15:08:52 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:08:52 2007] [notice] Digest: done
+[Wed Oct 17 15:08:52 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:08:52 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:09:00 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:09:07 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:09:17 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:02 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:07 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:15 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:21 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:14:12 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:14:25 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/testmodp
+[Wed Oct 17 15:25:49 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:25:49 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:25:49 2007] [notice] Digest: done
+[Wed Oct 17 15:25:49 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:25:49 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:25:58 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:26:05 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:09 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:14 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:28 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:31 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:28:21 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:28:21 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:28:21 2007] [notice] Digest: done
+[Wed Oct 17 15:28:21 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:28:21 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:28:32 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:28:39 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:38:33 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:38:37 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:26:25 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:28:03 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:28:03 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:28:03 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:28:03 2007] [notice] Digest: done
+[Wed Oct 17 16:28:03 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:28:03 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:28:08 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:28:14 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:28:47 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:28:47 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:28:47 2007] [notice] Digest: done
+[Wed Oct 17 16:28:47 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:28:47 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:28:54 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:29:35 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:29:35 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:29:35 2007] [notice] Digest: done
+[Wed Oct 17 16:29:35 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:29:35 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:29:45 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:30:54 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:30:54 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:30:54 2007] [notice] Digest: done
+[Wed Oct 17 16:30:54 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:31:42 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:31:42 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:31:42 2007] [notice] Digest: done
+[Wed Oct 17 16:31:42 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:31:42 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:31:51 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:33:21 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:33:21 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:33:21 2007] [notice] Digest: done
+[Wed Oct 17 16:33:21 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:33:21 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:33:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:33:41 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:36:50 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:36:59 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:36:59 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:36:59 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:36:59 2007] [notice] Digest: done
+[Wed Oct 17 16:36:59 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:36:59 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:37:11 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:11 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:37:16 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:16 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:37:51 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:51 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/modpystatus.py
+[Wed Oct 17 16:38:03 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:38:03 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/modpystatus.py
+[Wed Oct 17 16:39:28 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:39:28 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:39:28 2007] [notice] Digest: done
+[Wed Oct 17 16:39:28 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:39:28 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:39:39 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/testmodp
+[Wed Oct 17 16:39:46 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:39:46 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:39:53 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:39:53 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:41:09 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:41:09 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:41:09 2007] [notice] Digest: done
+[Wed Oct 17 16:41:09 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:41:09 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:41:12 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:41:12 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:41:14 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:41:14 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:42:30 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:42:32 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:42:32 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:42:32 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:42:32 2007] [notice] Digest: done
+[Wed Oct 17 16:42:32 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:42:32 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:42:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:42:36 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:43:41 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:43:41 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py

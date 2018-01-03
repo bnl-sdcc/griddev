@@ -1,0 +1,72 @@
+name: sl5-x86_64-base
+summary: Base SL 5 for general-purpose VM usage with utilities.
+version: 1
+release: 0
+os:
+  name: sl
+  version: 5
+  password: griddev
+  
+hardware:
+  cpus: 1
+  memory: 1024
+  partitions:
+    "/":
+      size: 5
+      
+packages:
+  - bind-utils
+  - cloudconfig
+  - curl
+  - dhclient
+  - lsof
+  - ntp
+  - openssh-clients
+  - openssh-server
+  - subversion
+  - telnet
+  - vim-enhanced
+  - wget
+  - yum
+ 
+default_repos: false # default is true
+
+repos:
+
+  - name: "sl58-x86_64-os"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl58-os-2012-07-25/x86_64"
+	
+  - name: "racf-grid-testing"
+    baseurl: "http://dev.racf.bnl.gov/yum/grid/testing/rhel/5Client/x86_64"
+
+  - name: "centos-plus"
+    baseurl: "http://dev.racf.bnl.gov/yum/grid/external/rhel/5Client/x86_64"  
+
+files:
+
+  "/root/.ssh":
+    - "authorized_keys"
+
+  "/etc":
+# Adjust lfc and dcsrm IPs in hosts. This should really bin the atlas wn. 
+    - "rc.d/rc.local"      
+    - "ntp/step-tickers"
+    - "sysconfig/selinux"
+    - "profile.d/proxy.sh"
+    - "ssh/sshd_config"
+      
+post:
+  base:
+    - "chmod +x /etc/init.d/cloudconfig"   
+    - "/sbin/chkconfig cloudconfig on"
+  
+# SSH
+    - "chown -R root:root /root/.ssh"  
+    - "chmod -R go-rwx /root/.ssh"
+    - "chmod +x /etc/rc.local"
+    - "/sbin/chkconfig sshd on"
+    - "/sbin/chkconfig ntpd on"
+    - "/sbin/chkconfig iptables off"
+    - "/sbin/chkconfig ip6tables off"
+
+

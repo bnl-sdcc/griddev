@@ -1,0 +1,57 @@
+Documentation
+==========================================
+https://github.com/VOLTTRON/volttron/wiki
+
+
+System Setup Recipes
+==========================================
+grid14.racf.bnl.gov test host
+was fedora 18, upgrade to fedora 20
+conduits (20k-30k) requested 7/18
+external DNS requested 7/18		
+
+Needed to install:
+python-devel
+C Development Tools
+libevent-devel
+yum groupinstall "C Development Tools and Libraries"
+
+need gpfs client on grid14
+
+
+Installation Recipes
+========================================
+https://github.com/VOLTTRON/volttron/wiki/DevelopmentPrerequisites
+ 
+https://github.com/VOLTTRON/volttron/wiki/BuildingTheProject
+
+Extract it to the volttron directory.
+
+Update ZeroMQ:
+    rm -r eggs/pyzmq-13.1.0-py2.7-linux-i686.egg/
+    edit buildout.cfg and remove the pyzmq line.
+    bin/buildout -N
+
+Start the platform in verbose mode: 
+    bin/volttron-lite -c dev-config.ini -vvv -l volttron.log
+
+Build and deploy the multi-node service (once config is updated)
+    volttron/scripts/build-agent.sh MultiBuilding
+    chmod +x Agents/multibuildingagent-0.1-py2.7.egg
+    bin/volttron-ctrl install-executable -f Agents/multibuildingagent-0.1-py2.7.egg
+    bin/volttron-ctrl load-agent multicomm.service
+    bin/volttron-ctrl start-agent multicomm.service
+
+Install and load test agent. There is a config file for each site. Right now the only difference is the agent name.
+    volttron/scripts/build-agent.sh ASCRAgent
+    chmod +x Agents/ascragent-0.1-py2.7.egg
+    bin/volttron-ctrl install-executable Agents/ascragent-0.1-py2.7.egg
+    bin/volttron-ctrl load-agent Agents/ASCRAgent/bnl.agent
+    bin/volttron-ctrl start-agent bnl.agent
+
+If code for one of the agents changes, remove the executable, rebuild and re-install
+    bin/volttron-ctrl remove-executable multibuildingagent-0.1-py2.7.egg
+
+If a config changes, unload the agent
+    bin/volttron-ctrl stop-agent multicomm.service
+    bin/volttron-ctrl unload-agent multicomm.service

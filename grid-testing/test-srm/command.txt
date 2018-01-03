@@ -1,0 +1,2 @@
+. /afs/usatlas.bnl.gov/Grid/OSG/OSG-Client-036-2/setup.sh
+srmcp file:////usatlas/u/jhover/test-srm/testfile.txt  srm://dctest02.usatlas.bnl.gov:8443/pnfs/usatlas.bnl.gov/data/jhover/testfile-2007-01-04-1449.txt

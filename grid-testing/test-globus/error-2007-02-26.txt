@@ -1,0 +1,3 @@
+[jhover@lcg05 test-globus]$ globus-job-run lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor /bin/env
+submit-helper script running on host acas0200 gave error: cache_export_dir (/direct/usatlas+grid/atlas004/globus-cache-export.tD8164) on gatekeeper did not contain a cache_export_dir.tar archive
+

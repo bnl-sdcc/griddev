@@ -1,0 +1,2 @@
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+0 0,3,6,9,12,15,18,21 * * * root /usr/libexec/condor-clean-cron.sh >> /var/log/condor-clean-cron.log 2>&1

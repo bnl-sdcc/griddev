@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Data Retrieval Page{% endblock %}
+
+{% block content %}
+Dates and times can be specified in several ways. Here are examples:
+<br>
+'2006-10-25 14:30:59'
+<br>
+'2006-10-25 14:30'
+<br>
+'2006-10-25'
+<br>
+'10/25/2006 14:30:59'
+<br>
+'10/25/2006 14:30'
+<br>
+'10/25/2006'
+<br>
+'10/25/06 14:30:59'
+<br>
+'10/25/06 14:30'
+<br>
+'10/25/06'
+<br>
+
+<form action="" method="POST">
+	<table>
+	{{ form.as_table }}
+	</table>
+	<br>
+	<input type="submit" value="Submit">
+</form>
+{% endblock %}

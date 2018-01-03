@@ -1,0 +1,7 @@
+# This file is managed by Puppet - DO NOT EDIT!
+# Depth first filling of cluster
+# Required for efficient partitionable slots
+#
+NEGOTIATOR_POST_JOB_RANK =  (RemoteOwner =?= UNDEFINED) * \
+                            (0 - cpus)
+                            

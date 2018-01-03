@@ -1,0 +1,77 @@
+# This file is managed by Puppet - DO NOT EDIT!
+# Job environment config
+EXECUTE = <%= $htcondor::local_dir %>/execute
+
+<% if $htcondor::use_jobwrapper { -%>
+USER_JOB_WRAPPER = /usr/libexec/jobwrapper.sh
+<% } -%>
+
+
+<% if $htcondor::use_slotusers { -%>
+STARTER_ALLOW_RUNAS_OWNER = False
+DEDICATED_EXECUTE_ACCOUNT_REGEXP = slot.+
+SLOT1_USER = slot1
+SLOT2_USER = slot2
+SLOT3_USER = slot3
+SLOT4_USER = slot4
+SLOT5_USER = slot5
+SLOT6_USER = slot6
+SLOT7_USER = slot7
+SLOT8_USER = slot8
+SLOT9_USER = slot9
+SLOT10_USER = slot10
+SLOT11_USER = slot11
+SLOT12_USER = slot12
+SLOT13_USER = slot13
+SLOT14_USER = slot14
+SLOT15_USER = slot15
+SLOT16_USER = slot16
+SLOT17_USER = slot17
+SLOT18_USER = slot18
+SLOT19_USER = slot19
+SLOT20_USER = slot20
+SLOT21_USER = slot21
+SLOT22_USER = slot22
+SLOT23_USER = slot23
+SLOT24_USER = slot24
+SLOT25_USER = slot25
+SLOT26_USER = slot26
+SLOT27_USER = slot27
+SLOT28_USER = slot28
+SLOT29_USER = slot29
+SLOT30_USER = slot30
+SLOT31_USER = slot31
+SLOT32_USER = slot32
+SLOT1_1_USER = slot1
+SLOT1_2_USER = slot2
+SLOT1_3_USER = slot3
+SLOT1_4_USER = slot4
+SLOT1_5_USER = slot5
+SLOT1_6_USER = slot6
+SLOT1_7_USER = slot7
+SLOT1_8_USER = slot8
+SLOT1_9_USER = slot9
+SLOT1_10_USER = slot10
+SLOT1_11_USER = slot11
+SLOT1_12_USER = slot12
+SLOT1_13_USER = slot13
+SLOT1_14_USER = slot14
+SLOT1_15_USER = slot15
+SLOT1_16_USER = slot16
+SLOT1_17_USER = slot17
+SLOT1_18_USER = slot18
+SLOT1_19_USER = slot19
+SLOT1_20_USER = slot20
+SLOT1_21_USER = slot21
+SLOT1_22_USER = slot22
+SLOT1_23_USER = slot23
+SLOT1_24_USER = slot24
+SLOT1_25_USER = slot25
+SLOT1_26_USER = slot26
+SLOT1_27_USER = slot27
+SLOT1_28_USER = slot28
+SLOT1_29_USER = slot29
+SLOT1_30_USER = slot30
+SLOT1_31_USER = slot31
+SLOT1_32_USER = slot32
+<% } -%>

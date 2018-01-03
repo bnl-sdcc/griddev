@@ -1,0 +1,13 @@
+12 Jul, 14:44:03 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+12 Jul, 14:44:12 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+12 Jul, 14:44:13 -C- "CFCI::crRemoteDirs": Cannot create job directory on NS: lcg02.usatlas.bnl.gov/var/glite/SandboxDir/sS/https_3a_2f_2flcg02.usatlas.bnl.gov_3a9000_2fsSP0HoBkgJgIDE-EGnz0Tg
+12 Jul, 14:44:13 -C- "CFCI::evRemoteDirsCr": Remote Dirs Creation failed: stopping Job.
+12 Jul, 14:44:13 -C- "NSC::submit": Globus Ftp API Failure in creating remote Directories.
+12 Jul, 14:44:28 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+12 Jul, 14:44:29 -C- "CFCI::crRemoteDirs": Cannot create job directory on NS: lcg02.usatlas.bnl.gov/var/glite/SandboxDir/0F/https_3a_2f_2flcg02.usatlas.bnl.gov_3a9000_2f0F3pd0WNGNB8Oy_5fNVeCCNQ
+12 Jul, 14:44:29 -C- "CFCI::evRemoteDirsCr": Remote Dirs Creation failed: stopping Job.
+12 Jul, 14:44:29 -C- "NSC::submit": Globus Ftp API Failure in creating remote Directories.
+12 Jul, 14:57:21 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+12 Jul, 14:57:22 -C- "CFCI::crRemoteDirs": Cannot create job directory on NS: lcg02.usatlas.bnl.gov/var/glite/SandboxDir/pn/https_3a_2f_2flcg02.usatlas.bnl.gov_3a9000_2fpnX-1yirzp-gwhpW-15yvA
+12 Jul, 14:57:22 -C- "CFCI::evRemoteDirsCr": Remote Dirs Creation failed: stopping Job.
+12 Jul, 14:57:22 -C- "NSC::submit": Globus Ftp API Failure in creating remote Directories.

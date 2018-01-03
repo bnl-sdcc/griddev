@@ -1,0 +1,15 @@
+[racf-grid-testing]
+name=RACF Grid Testing $releasever - $basearch
+failovermethod=priority
+baseurl=http://dev.racf.bnl.gov/yum/grid/testing/rhel/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-racf-grid.asc
+
+[racf-grid-testing-fedora]
+name=RACF Grid Testing $releasever - $basearch
+failovermethod=priority
+baseurl=http://dev.racf.bnl.gov/yum/grid/testing/fedora/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-racf-grid.asc

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Data Analysis and Graphing Page{% endblock %}
+
+{% block content %}
+<h2>Data Analysis and Graphing</h2>
+Dates should be specified by year, month, and day, separated by dashes or forward slashs.
+ Times, if desired, can be specified to the hour and minute, with optional seconds.
+ A space should separate dates and times. All times are in UTC (Universal Time Coordinated).<br> 
+<br>
+Here are examples:
+<br>
+&#160;&#160;'2006-10-25 14:30:59', '2006-10-25 14:30','2006-10-25'
+<br>
+&#160;&#160;'10/25/2006 14:30','10/25/2006','10/25/06 14:30:59'
+<br>
+<br>
+Note that some combinations of output format and processing aren't meaningful.
+<br>
+<br>
+<form action="" method="POST">
+	<table>
+	{{ form.as_table }}
+	</table>
+	<br>
+	<input type="submit" value="Submit">
+</form>
+{% endblock %}

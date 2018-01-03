@@ -1,0 +1,3 @@
+include *.txt
+recursive-include misc *.txt *.sh
+recursive-include config *.conf

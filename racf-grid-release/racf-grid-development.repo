@@ -1,0 +1,16 @@
+[racf-grid-development]
+name=RACF Grid Development for $releasever - $basearch
+failovermethod=priority
+baseurl=http://dev.racf.bnl.gov/yum/grid/development/rhel/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-racf-grid.asc
+
+
+[racf-grid-development-fedora]
+name=RACF Grid Development for $releasever - $basearch
+failovermethod=priority
+baseurl=http://dev.racf.bnl.gov/yum/grid/development/fedora/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-racf-grid.asc

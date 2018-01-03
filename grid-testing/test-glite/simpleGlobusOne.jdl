@@ -1,0 +1,6 @@
+Executable = "simpleGlobusOne.sh";
+StdOutput = "simpleGlobusOne.out";
+StdError = "simpleGlobusOne.err";
+InputSandbox = {"./simpleGlobusOne.sh"};
+OutputSandbox = {"simpleGlobusOne.out","simpleGlobusOne.err"};
+Requirements = other.GlueCEUniqueID == "lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas";

@@ -1,0 +1,129 @@
+USING CONDOR IN THE CLOUD AT SCALE
+
+We have found that running a Condor cluster on a wide-area network, with the CCB (Condor Connection Broker) and password authentication ran into problems beyond the ~2500-node level. This problem was iteratively addressed with help from the Condor team. 
+
+All the configs and scripts are viewable here:
+  http://svn.usatlas.bnl.gov/svn/griddev/boxgrinder
+
+This is meant to be a guide to aid in your configuration efforts. These are not recipes that can be copied blindly and run. Take the time to understand what each of the lines in the config files actually do. 
+
+It would probably be best to run the very latest Condor version. 
+
+GENERAL CONDOR SCALING
+
+In general, we saw interference between Collector and Schedd daemons on the same host with more than ~3500 worker nodes. The exact nature of this interference was not clear, even to the Condor team. The conseqence was a worsening spiral of schedd crashes, collector loading, and port consumption (from efforts to re-establish inter-daemon connections). 
+
+One way to check on how "loaded" the collector is, is to check DaemonCoreDuty:
+
+     condor_status -collector -l | grep ^DaemonCoreDuty
+
+As greater scale is needed, our current approach would be:
+
+1) Shared everything: 
+      Central Manager( Collector, Negotiator, CCB, Shared_port) and Schedd on one host. 
+      This is OK up to ~3500 jobs. Maybe higher without CCB and strong authentication.  
+
+2) Split Schedd/Central Manager:
+      Host one: Central Manager(Collector, Negotiator, [CCB, Shared_port])
+      Host two: (Schedd, Shared_port)
+      This should be OK up to ~10000+ jobs. 
+
+3) Multiple Schedds and/or Multiple Collector processes.  
+      Host one: Central Manager( Collector, [CollectorN], Negotiator, CCB, Shared_port)
+      Host two: Schedd 1
+      Host N: Schedd N
+      This should be OK up to ~50000 jobs (the Condor team's nominal goal for a single cluster).  
+
+
+
+COLLECTOR AND SCHEDD TWEAKS
+1) OS-level tweaks on collector/schedd hosts: open files, max connections
+
+/etc/security/limits.conf
+*        -    nofile         1000000
+*        -    nproc        unlimited
+*        -    memlock      unlimited
+*        -    locks        unlimited
+*        -    core         unlimited
+
+( restart services or reboot to set). 
+
+/etc/sysctl.conf
+fs.file-max = 1000000
+
+
+?? UDP buffers?
+sysctl -w net.core.rmem_max=8388608
+sysctl -w net.core.wmem_max=8388608
+sysctl -w net.core.rmem_default=65536
+sysctl -w net.core.wmem_default=65536
+sysctl -w net.ipv4.tcp_rmem='4096 87380 8388608'
+sysctl -w net.ipv4.tcp_wmem='4096 65536 8388608'
+sysctl -w net.ipv4.tcp_mem='8388608 8388608 8388608'
+sysctl -w net.ipv4.route.flush=1
+
+(sysctl -p to reload)
+
+2) split schedd and collector in order to protect schedd from collector overload:
+
+collector config:
+ http://svn.usatlas.bnl.gov/svn/griddev/boxgrinder/condor/50cloudcollector.config
+
+schedd config:
+similar, but pointed at collector host
+ http://svn.usatlas.bnl.gov/svn/griddev/boxgrinder/condor/55cloudsubmit.config
+
+3) Run multiple collector processes (x20)
+-- In our case the range is 29660-29680.
+
+4) Use the shared_port daemon
+-- reduces thousands of TCP connections to a handful.
+USE_SHARED_PORT = TRUE
+DAEMON_LIST =  $(DAEMON_LIST) SHARED_PORT
+
+
+5) Enable session auth settings. Reduces auth renegotiation after initial setup.
+SEC_ENABLE_MATCH_PASSWORD_AUTHENTICATION  = True
+
+6) Prevent any preemption whatsoever:
+PREEMPT = FALSE
+KILL = FALSE
+PREEMPTION_REQUIREMENTS = False
+RANK = 0
+NEGOTIATOR_CONSIDER_PREEMPTION = False
+CLAIM_WORKLIFE = 3600
+
+7) Be tolerant of slowdowns and timeouts:
+SUBMIT_EXPRS = $(SUBMIT_EXPRS) JobLeaseDuration
+JobLeaseDuration = 1800
+NEGOTIATOR_INTERVAL = 900
+TOOL_TIMEOUT_MULTILIER=2
+
+
+8) If user management of Condor startds is required (via admin commands) then you need 
+to have a separate copy of the password_file for that user, and set an environment var 
+pointed to it, e.g. in ~/.bash_profile
+
+export _condor_SEC_PASSWORD_FILE=/home/apf/etc/password_file
+
+
+EXECUTE HOST TWEAKS
+http://svn.usatlas.bnl.gov/svn/griddev/boxgrinder/condor/config.d/50cloud_condor.config
+http://svn.usatlas.bnl.gov/svn/griddev/boxgrinder/init.d/condorconfig
+
+1) Choose random collector port to connect to. (in condorconfig init script) 
+
+2) Use shared_port daemon
+USE_SHARED_PORT = TRUE
+DAEMON_LIST =  $(DAEMON_LIST) SHARED_PORT
+
+3) Use session auth:
+SEC_ENABLE_MATCH_PASSWORD_AUTHENTICATION  = True
+ALLOW_WRITE = $(ALLOW_WRITE), submit-side@matchsession/*
+
+4)Prevent any preemption whatsoever
+PREEMPT = FALSE
+KILL = FALSE
+RANK = 0
+CLAIM_WORKLIFE = 3600
+

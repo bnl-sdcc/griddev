@@ -1,0 +1,85 @@
+name: sl6-x86_64-base
+summary: Base SL 6 for general-purpose VM usage with utilities.
+version: 1
+release: 1
+
+os:
+  name: sl
+  version: 6
+  password: griddev
+  
+hardware:
+  cpus: 1
+  memory: 1024
+  partitions:
+    "/":
+      size: 5
+      
+packages:
+  - @base
+  - rpm
+  - rpm-libs
+  - bash
+  - passwd
+  - bind-utils
+  - cloudconfig
+  - curl
+  - dhclient
+  - lsof
+  - ntp
+  - openssh-clients
+  - openssh-server
+  - subversion
+  - telnet
+  - unzip
+  - vim-enhanced
+  - wget
+  - yum
+  - zip
+ 
+default_repos: false # default is true
+
+repos:
+
+  - name: "sl63-x86_64-os"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-os-2013-04-05/x86_64"
+
+  - name: "sl63-x86_64-updates"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-updates-2013-04-05/x86_64"
+	
+  - name: "racf-grid-testing"
+    baseurl: "http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64"
+ 
+
+
+files:
+
+  "/root/.ssh":
+    - "authorized_keys"
+
+  "/etc":
+# Adjust lfc and dcsrm IPs in hosts. This should really bin the atlas wn. 
+    - "rc.d/rc.local"      
+    - "ntp/step-tickers"
+    - "sysconfig/selinux"
+    - "profile.d/proxy.sh"
+    - "ssh/sshd_config"
+
+  "/etc/security/limits.d":
+    - "limits/80-limits.conf"
+      
+post:
+  base:
+    - "chmod +x /etc/init.d/cloudconfig"   
+    - "/sbin/chkconfig cloudconfig on"
+  
+# SSH
+    - "chown -R root:root /root/.ssh"  
+    - "chmod -R go-rwx /root/.ssh"
+    - "chmod +x /etc/rc.local"
+    - "/sbin/chkconfig sshd on"
+    - "/sbin/chkconfig ntpd on"
+    - "/sbin/chkconfig iptables off"
+    - "/sbin/chkconfig ip6tables off"
+    - "/sbin/chkconfig cups off"
+

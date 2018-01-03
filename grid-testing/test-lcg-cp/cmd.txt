@@ -1,0 +1,1 @@
+lcg-cp --vo atlas -v srm://gridka-dcache.fzk.de:8443/pnfs/gridka.de/atlas/disk-only/misal1_mc12/log/misal1_mc12.005805.filtered_minbias6.digit.log.v12003103_tid018287_sub0929961/log.018287._41038.job.log.tgz.3 file:///$PWD/log.018287._41038.job.log.tgz

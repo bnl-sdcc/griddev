@@ -1,0 +1,25 @@
+http://stevewiideman.com/seotutorials+item.itemid+6.htm
+
+
+Color Name 	Hexadecimal Code
+lavender 	E6E6FA
+ghostwhite 	F8F8FF
+aliceblue 	F0F8FF
+mintcream 	F5FFFA
+honeydew 	F0FFF0
+lightgoldenrodyellow 	FAFAD2
+lemonchiffon 	FFFACD
+cornsilk 	FFF8DC
+lightyellow 	FFFFE0
+ivory 	FFFFF0
+floralwhite 	FFFAF0
+linen 	FAF0E6
+oldlace 	FDF5E6
+antiquewhite 	FAEBD7
+bisque 	FFE4C4
+peachpuff 	FFDAB9
+papayawhip 	FFEFD5
+seashell 	FFF5EE
+lavenderblush 	FFF0F5
+mistyrose 	FFE4E1
+snow 	FFFAFA

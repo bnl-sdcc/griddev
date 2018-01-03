@@ -1,0 +1,11 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# EC2 Attributes, if available
+#
+EC2PublicIP = "<%= $ec2_public_ipv4 %>"
+EC2PublicDNS = "<%= $ec2_public_hostname %>"
+EC2InstanceID = "<%= $ec2_instance_id %>"
+EC2InstanceType = "<%= $ec2_instance_type %>"
+EC2AMIID = "<%= $ec2_ami_id %>"
+STARTD_EXPRS = $(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType EC2AMIID
+MASTER_EXPRS = $(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType EC2AMIID

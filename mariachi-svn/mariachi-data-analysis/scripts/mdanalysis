@@ -1,0 +1,14 @@
+#!/bin/bash
+PYVER=`python -V 2>&1  | awk '{ print $2 }'  |  grep -o "[[:digit:]+]\.[[:digit:]]" `
+#echo $PYVER
+RPMEXE=/usr/lib/python$PYVER/site-packages/mariachida/analysis.py
+HOMEEXE=~/lib/python/mariachida/analysis.py
+
+if [ -f $RPMEXE ]; then
+	python /usr/lib/python$PYVER/site-packages/mariachida/analysis.py $*
+elif [ -f $HOMEEXE ]; then
+    export PYTHONPATH=~/lib/python
+    python $HOMEEXE $*
+else
+	echo "No suitable executable found."
+fi

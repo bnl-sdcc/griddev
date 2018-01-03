@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+     <title>{% block title %}{% endblock %}</title>
+     <link href="/static/css/custom/default.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+	  	<div id="header" class=header>
+	  	{% block header %}
+	     <h1>MARIACHI Data Retrieval and Analysis Site</h1>
+	    {% endblock %}  	
+	    </div>
+	    
+    <div id="container">
+	    
+	    <div id="leftbar" class=leftbar>
+	    {% block leftbar %}
+	    <h2>Areas</h2>
+	    <a href="/mariachi-ws/django/dataquery/" >Data Download</a><br>
+	    <a href="/mariachi-ws/django/analysis/" >Data Analysis/Graphs</a>
+	    {% endblock %}
+	    </div>
+	    
+	    <div id="main" class=main>
+	    {%block content %}{% endblock %}
+	    </div>
+	    
+	</div> 
+    
+    <div id="footer" class=footer>
+    {%block footer %}
+     <p>Thanks for visiting.</p>
+    {%endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# Configuration for collector and negotiator
+#
+DAEMON_LIST = $(DAEMON_LIST), COLLECTOR, NEGOTIATOR
+CONDOR_HOST = $(FULL_HOSTNAME)
+COLLECTOR_NAME = Condor Central Manager at $(FULL_HOSTNAME)
+COLLECTOR_HOST=$(CONDOR_HOST):9618
+NEGOTIATOR_INFORM_STARTD = False
+
+# Added by Jaime to prefer machines that haven't been idle for a long time
+NEGOTIATOR_PRE_JOB_RANK = (RemoteOwner =?= UNDEFINED) && (time() - EnteredCurrentState < 50000)
+
+# Increase for UPD buffer size
+COLLECTOR_SOCKET_BUFSIZE = 20480000
+COLLECTOR_ADDRESS_FILE = 
+UPDATE_COLLECTOR_WITH_TCP = TRUE
+
+# COLLECTOR.USE_SHARED_PORT = FALSE
+
+# Scaling aids
+SUBMIT_EXPRS = $(SUBMIT_EXPRS) JobLeaseDuration
+JobLeaseDuration = 900
+NEGOTIATOR_INTERVAL = 180
+TOOL_TIMEOUT_MULTILIER=2
+
+# Added by Jaime to forward more ad types to central collector
+# Before Condor 7.9.4, the collector will only accept one Collector ad
+# per host. Thus, we don't want to forward collector ads in older versions
+# of Condor.
+#CONDOR_VIEW_CLASSAD_TYPES = Machine,Submitter,DaemonMaster,Collector
+CONDOR_VIEW_CLASSAD_TYPES = Machine,Submitter,DaemonMaster

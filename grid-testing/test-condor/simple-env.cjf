@@ -1,0 +1,13 @@
+####################
+#
+# submit description file
+#                                                                      
+####################                                                   
+                                                                        
+    Executable     = /bin/env                                                  
+    Universe       = standard
+                                                                         
+#    Arguments      =                                                
+    Output  = foo.out1                                                     
+    Error   = foo.err1
+    Queue                                                                  

@@ -1,0 +1,15 @@
+executable = myapp
+Transfer_Executable = true
+globusscheduler = gridgk01.racf.bnl.gov/jobmanager
+universe = grid
+output = myapp/myapp.$(Process).out
+error=myapp/myapp.$(Process).error
+log = myapp/myapp.$(Process).log
+arguments=  George 90
+queue
+arguments=  Jane 45
+queue
+arguments= Robert  30
+queue
+
+

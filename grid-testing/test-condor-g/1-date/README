@@ -1,0 +1,1 @@
+This condor submit example runs the /bin/date program on a grid computer. Check the file called 'date.log' for the information about  the job submission. The output from the date command is in 'date.out' and any errors are in 'date.error'. 

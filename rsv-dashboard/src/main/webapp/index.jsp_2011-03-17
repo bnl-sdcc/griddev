@@ -1,0 +1,122 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+		pageEncoding="ISO-8859-1"
+	import="java.util.Calendar"
+	import="java.text.SimpleDateFormat"
+	import="java.sql.*"
+	import="java.io.*"
+	import="java.util.Date"
+        import="gov.bnl.racf.dashboard.*"
+
+
+%>
+
+<head>
+<style type="text/css">
+<%@include file="Navy.css" %>
+</style>
+</head>
+
+<html>
+<body>
+
+
+
+<div id="title">
+<h1><span>RACF</span></h1>
+<h3><span>Grid Group</h3>
+<h2><span>The Experimental Gratia/RSV Dashboard</span></h2>
+</div>
+
+
+
+<div id="sideNav">
+<ul>
+  <li><a href="https://nagios.racf.bnl.gov/nagios/cgi-bin/prod/dashboard.php">Old RACF dashboard</a></li>
+  <li><a href="https://nagios.racf.bnl.gov/nagios/cgi-bin/prod/perfSonar.php">Old perfSONAR dashboard</a></li>
+
+  <li><a href="https://nagios.racf.bnl.gov/nagios/cgi-bin/test/dashboard.php">Old RACF dashboard (test)</a></li>
+  <li><a href="https://nagios.racf.bnl.gov/nagios/cgi-bin/test/perfSonar.php">Old perfSONAR dashboard (test)</a></li>
+
+  <li><a href="http://google.com">Google</a></li>
+  <li><a href="http://yahoo.com">Yahoo</a></li>
+  
+</div>
+
+<div id="body">
+
+<h2>Throughput Measurements</h2>
+
+<%
+
+
+ParameterBag pB=new ParameterBag();
+pB.setRequestUri(request.getRequestURI());
+pB.setWorkDirectory(request.getRealPath("/"));
+
+pB.addParam("serverName",request.getServerName());
+pB.addParam("serverPort",Integer.toString(request.getServerPort()));
+pB.addParam("servletPath",request.getServletPath());
+pB.addParam("page",request.getParameter("page"));
+
+pB.addParam("interval",request.getParameter("interval"));
+pB.addParam("src",request.getParameter("src"));
+pB.addParam("dst",request.getParameter("dst"));
+pB.addParam("mon",request.getParameter("mon"));
+pB.addParam("host",request.getParameter("host"));
+pB.addParam("service",request.getParameter("service"));
+pB.addParam("site",request.getParameter("site"));
+
+
+DbConnector dB=new DbConnector();
+
+if(pB.page.equals(ParameterBag.pageAddress("Main")) || pB.page.equals( ParameterBag.pageAddress("Throughput Matrix") )){
+	ThroughputMatrix tM=new ThroughputMatrix(pB,dB);
+	out.println(tM.htmlTable().toHtml());
+}
+if(pB.page.equals(ParameterBag.pageAddress("Throughput Node History Plot"))){
+	String src=pB.src;
+	String dst=pB.dst;
+	String mon=pB.mon;
+	ThroughputNode tn=new ThroughputNode(pB,dB,src,dst,mon);
+	out.println(tn.makeHistoryPlot(request.getRealPath("/")));	   
+}
+if(pB.page.equals( ParameterBag.pageAddress("Throughput Node"))){
+
+	String src=pB.src;
+	String dst=pB.dst;
+	String mon=pB.mon;
+	
+	ThroughputNode tn=new ThroughputNode(pB,dB,src,dst,mon);
+	out.println(tn.shortHtmlTable().toHtml());
+	//out.println(tn.makeHistoryPlot(request.getRealPath("/")));
+	//out.println(tn.getHistoryPlot(request.getRealPath("/")));
+}
+
+if(pB.page.equals( ParameterBag.pageAddress("Throughput Node History Table"))){
+
+	String src=pB.src;
+	String dst=pB.dst;
+	String mon=pB.mon;
+		
+	ThroughputNode tn=new ThroughputNode(pB,dB,src,dst,mon);
+	out.println(tn.getHistoryTablePage());
+	//out.println(tn.getHistoryTable().toHtml());
+	//out.println(tn.shortHtmlTable().toHtml());
+	//out.println(tn.makeHistoryPlot(request.getRealPath("/")));
+	//out.println(tn.getHistoryPlot(request.getRealPath("/")));
+}
+
+%>
+
+
+</div>
+
+
+<div id="tail">
+<p><b>(c) 2010 Brookhaven National Laboratory </b>- send suggestions
+and comments to <a href="mailto:tomw@bnl.gov">tomw@bnl.gov</a><br>
+</p>
+</div>
+
+</body>
+</html>

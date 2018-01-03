@@ -1,0 +1,120 @@
+#! /bin/sh
+#
+# Simple script to create a config file so the
+# startd will connect to a randomized collector port. 
+#
+#
+# chkconfig: 2345 80 20
+# description: Condor HTC computing platform
+#
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+if [ -f /etc/sysconfig/condorconfig ]; then
+	. /etc/sysconfig/condorconfig
+fi
+
+
+config_collector() {
+    # Pick a random collector to use
+	collector_config=/etc/condor/config.d/90collector.config
+	port_list=$CONDOR_PORT_LIST
+	let seed=`date +%s`+$$
+	echo $port_list | awk "BEGIN{srand($seed)}"'{split($0,g,","); for (i in g) print rand() "\tCOLLECTOR_PORT=" g[i]}' |sort -n|awk '{print $2}'|tail -1 >$collector_config
+    echo >> $collector_config
+	echo 'COLLECTOR_HOST=$(CONDOR_HOST):$(COLLECTOR_PORT)'>>$collector_config
+
+}
+
+config_attrs() {
+	# If available, publish public ip and instanceid via Startd
+	# Seen to work on EC2 and Openstack v4
+   cat > /etc/condor/config.d/92cloudattrs.config <<EOF
+EC2PublicIP="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-ipv4)"
+EC2PublicDNS="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-hostname)"
+EC2InstanceID="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)"
+
+STARTD_EXPRS=\$(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS
+MASTER_EXPRS=\$(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS
+EOF
+   chmod a+r /etc/condor/config.d/92cloudattrs.config 
+
+}
+
+calc_slots() {
+  #
+  # Since cloud nodes have virtual CPUs anyway, calculate NUM_CPUS based on 
+  # desired memory. 2G by default, but provide for future miniumus via 
+  # Userdata....
+  #
+        if [ "$1X" = "X" ]; then
+                minper=2000000
+        else
+                minper=$1
+        fi
+        mem=`cat /proc/meminfo | grep MemTotal | awk '{print $2}'`
+        numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
+        numslots=$(($mem / $minper))
+        if [ $numslots -lt 1 ]; then
+           numslots=1
+        fi
+        echo $numslots
+
+}
+
+config_slots() {
+	#
+	# Determine number of slots/cpus 
+	#
+	#
+	slot_config=/etc/condor/config.d/91slots.config
+	RETVAL=0
+	if [ ! -r $slot_config ] ; then
+		numcpus=$(calc_slots)
+	    echo "NUM_CPUS=$numcpus">>$slot_config
+	    echo "NUM_SLOTS=$numcpus">>$slot_config
+ 	    echo >> $slot_config
+	fi
+	return $RETVAL
+}
+
+start() {
+	echo -n $"Setting random collector to use: "
+	config_collector
+	config_slots
+	config_attrs
+	RETVAL=$?
+	echo
+	return $RETVAL
+
+}
+
+stop() {
+	RETVAL=0
+	return $RETVAL
+
+}
+
+restart() {
+        stop
+        start
+}
+
+case "$1" in
+start)
+        start
+        ;;
+stop)
+        stop
+        ;;
+restart)
+        restart
+        ;;
+*)
+        echo $"Usage: $0 {start|stop|restart}"
+        RETVAL=2
+esac
+
+exit $RETVAL
+

@@ -1,0 +1,40 @@
+RHEL5/SL5/CENTOS5 Django dependency installation. 
+
+-- Ensure/add 3rd party YUM repositories:
+ATrpms (for Django) 
+[atrpms]
+name=ATrpms rpms
+baseurl=http://ftp.scientificlinux.org/linux/extra/atrpms/sl5-$basearch/stable
+        http://ftp1.scientificlinux.org/linux/extra/atrpms/sl5-$basearch/stable
+        ftp://ftp.scientificlinux.org/linux/extra/atrpms/sl5-$basearch/stable
+enabled=1
+# To use priorities you must have yum-priorities installed
+priority=40
+
+-- install Django (v.  1.1.1-1)
+-- install mysql mysql-devel  (v.5.0.77)
+-- install python-devel
+
+-- If you get a
+     django.core.exceptions.ImproperlyConfigured: MySQLdb-1.2.1p2 or newer is required; you have 1.2.1
+error, you'll need to upgrade MySQLdb:
+
+-- Go to http://sourceforge.net/projects/mysql-python and download source for a newer version. 
+-- Unpack source and edit setup.cfg, add
+   [install]
+   optimize=1
+
+then run python setup.py bdist_rpm   
+   
+-- -- If you get "global name 'get_python_version'" error, then alter 
+ vim /usr/lib/python2.4/site-packages/setuptools/command/bdist_rpm.py
+ 
+ Change line 22 from 
+   src.endswith('.src.rpm') and 'any' or get_python_version(),
+ TO 
+   src.endswith('.src.rpm') and 'any' or sys.version[:3],
+   
+
+
+
+   

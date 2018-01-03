@@ -1,0 +1,19 @@
+dcpin usage
+-------------
+
+Client
+------------
+
+
+
+
+
+
+
+Server
+-----------
+Server needs ssh key: dcache-script-admin-key 
+dCache admin server cipher: blowfish 
+dCache admin server port:  22223 
+dCache admin server host: dcache01.usatlas.bnl.gov
+dCache admin server user: admin

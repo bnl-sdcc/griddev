@@ -1,0 +1,44 @@
+#!/bin/bash
+PYVER=`python -V 2>&1  | awk '{ print $2 }'  |  grep -o "[[:digit:]+]\.[[:digit:]]" `
+#echo $PYVER
+RPMEXE=/usr/lib/python$PYVER/site-packages/VOMSAdminUtils/vomsadmin-util.py
+HOMEEXE=~/lib/python/VOMSAdminUtils/vomsadmin-util.py
+DEBUG=0
+
+if [ -f $RPMEXE ]; then
+    PYSCRIPT=/usr/lib/python$PYVER/site-packages/VOMSAdminUtils/vomsadmin-util.py  
+elif [ -f $HOMEEXE ]; then
+    export PYTHONPATH=~/lib/python
+    PYSCRIPT=$HOMEEXE
+else
+    echo "No suitable vomsadmin-util.py executable found."
+    exit 1
+fi
+
+#
+# Armor all quoted inbound arguments again for passing to underlying python script. 
+#
+for arg ; do
+    if [ $DEBUG -eq 1 ] ; then 
+        echo "[DEBUG] Arg is $arg"
+        echo "[DEBUG] ARGS are: $ARGS"
+    fi
+    case $arg in
+
+        *)
+        origlen=${#arg}
+        nospace=${arg//' '/''}
+        newlen=${#nospace}
+        if [ $newlen -lt $origlen ]; then
+            ARGS="$ARGS \"$arg\""
+        else
+            ARGS="$ARGS $arg"
+        fi
+        ;;
+        
+    esac
+done
+
+# Execute correct script with "armored" args...
+eval python $PYSCRIPT $ARGS
+

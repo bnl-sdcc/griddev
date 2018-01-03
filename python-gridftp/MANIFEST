@@ -1,0 +1,7 @@
+GridFTP.py
+MANIFEST.in
+libgridftp.c
+libgridftp.h
+libgridftp.i
+setup.cfg
+setup.py

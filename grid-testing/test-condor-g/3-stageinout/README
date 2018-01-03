@@ -1,0 +1,11 @@
+This condor submit example runs a program called 'test-input-file' that reads from an input file and writes an output file. The program requires one command line argument which is the name of the input file.
+
+
+Issue the command 'test-input-file number-list' to run the program interactively and it will write the output in a file called 'number-list.output'
+
+In this example, we need to transfer the input file to the grid computer using uberftp which is an interactive, grid-ftp-enabled, ftp client. Issue the command 'uberftp beowulf2.dartmouth.edu' to connect, 'cd' to the grid-class directory and create an subdirectory with your username. Then use the 'put' command to the transfer the input file 'number-list'. Type 'quit' to disconnect from beowulf2.
+
+Submit the example3.submit file to condor and when it is finished, use uberftp to connect to beowulf2 and retrieve the output file called 'number-list.output' from the grid-class/your-username subdirectory.
+
+You can check the log and error files for any errors. In this case the output file will be empty.
+

@@ -1,0 +1,8 @@
+globus-url-copy -vb
+gsiftp://dcdoor04.usatlas.bnl.gov/pnfs/usatlas.bnl.gov/u04/hiroito/ddm/user.HironoriIto.MICH.Load_001/user.HironoriIto.MICH.Load_001.038
+file:///usatlas/u/jhover/test-guc/testfile.dat
+
+globus-url-copy -vb  file:///usatlas/u/jhover/test-guc/testfile.dat
+gsiftp://dcdoor04.usatlas.bnl.gov/pnfs/usatlas.bnl.gov/u04/jhover/rt-testfile.dat 
+
+uberftp <hostname> "cd <dir> ; rm <filename>"

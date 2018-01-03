@@ -1,0 +1,2 @@
+include *.txt *.c *.h *.i *.so MANIFEST.in
+prune examples/sample?/build

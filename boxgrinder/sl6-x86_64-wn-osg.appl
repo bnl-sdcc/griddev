@@ -1,0 +1,50 @@
+name: sl6-x86_64-wn-osg
+summary: SL 6 OSG Base appliance containing OSG worker node client. 
+version: 1
+release: 0
+
+os:
+  name: sl
+  version: 6
+  password: griddev
+
+hardware:
+  cpus: 1
+  memory: 2048
+  partitions:
+    "/":
+      size: 5
+      
+appliances:
+  - sl6-x86_64-base
+
+packages:
+  - osg-ca-certs
+  - osg-wn-client
+  - yum-priorities
+
+
+
+default_repos: false # default is true
+
+repos:
+
+  - name: "osg-release-x86_64"
+   	baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel6/osg-release-2013-04-09/x86_64"
+
+  - name: "osg-epel-deps"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel6/osg-epel-deps-2013-04-09/x86_64"
+
+
+files:
+
+  "/etc":
+    - "profile.d/osg.sh"
+    
+post:
+  base:
+# Grid WN setup  
+    - "/sbin/chkconfig fetch-crl-boot on"
+    - "/sbin/chkconfig fetch-crl-cron on"
+   
+    

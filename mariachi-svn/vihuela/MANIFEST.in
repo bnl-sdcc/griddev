@@ -1,0 +1,6 @@
+include *.txt *.py *.pyo *.pyc
+recursive-include *.pyc *.pyc
+recursive-include vihuela *.py 
+recursive-include scripts *.py 
+recursive-include misc *.txt *.sh *.uxf *
+recursive-include config *.conf

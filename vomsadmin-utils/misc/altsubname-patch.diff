@@ -1,0 +1,65 @@
+--- /usr/lib/python2.4/site-packages/M2Crypto/SSL/Checker.py	2006-03-20 14:26:28.000000000 -0500
++++ /home/jhover/devel/python-vomsadmin/misc/Checker.py	2007-11-01 12:14:34.000000000 -0400
+@@ -3,6 +3,10 @@
+ 
+ Copyright (c) 2004-2005 Open Source Applications Foundation.
+ All rights reserved.
++
++Support for multi-field altSubjectName attribute in certs added. 
++
++
+ """
+ 
+ from M2Crypto import util, EVP
+@@ -74,31 +78,39 @@
+                 raise WrongCertificate('peer certificate fingerprint does not match')
+ 
+         if self.host:
+-            hostValidationPassed = False
++            commonNameValid = False
++            subjectAltNameValid = False
+ 
+             # XXX subjectAltName might contain multiple fields
+-            # subjectAltName=DNS:somehost
++            # subjectAltName=DNS:somehost, DNS:someotherhost, otherkey:val
+             try:
+                 subjectAltName = peerCert.get_ext('subjectAltName').get_value()
+-                if not self._match(self.host, subjectAltName, True):
+-                    raise WrongHost(expectedHost=self.host, 
++                sanlist = subjectAltName.split(",")
++                for field in sanlist:
++                    if self._match(self.host, field, True):
++                        subjectAltNameValid = True
++                if not subjectAltNameValid:
++                    raise WrongHost(expectedHost=self.host,
+                                     actualHost=subjectAltName,
+-                                    fieldName='subjectAltName')
+-                hostValidationPassed = True
++                                    fieldName='subjectAltName')            
++            # Ignore if cert has no subjectAltName extension
++            # But then commonName *must* match for validation
+             except LookupError:
+                 pass
+ 
+-            # commonName=somehost
+-            if not hostValidationPassed:
++            if not subjectAltNameValid:
++                # commonName=somehost
+                 try:
+                     commonName = peerCert.get_subject().CN
+-                    if not self._match(self.host, commonName):
++                    if self._match(self.host, commonName):
++                        commonNameValid = True
++                    else:
+                         raise WrongHost(expectedHost=self.host,
+-                                        actualHost=commonName,
+-                                        fieldName='commonName')
++                                            actualHost=commonName,
++                                            fieldName='commonName')                    
+                 except AttributeError:
+                     raise WrongCertificate('no commonName in peer certificate')
+-
++	               
+         return True
+ 
+     def _match(self, host, certHost, subjectAltName=False):

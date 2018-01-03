@@ -1,0 +1,10 @@
+executable = test-input-file
+arguments=  number-list
+Transfer_Executable = true
+globusscheduler = beowulf2.dartmouth.edu/jobmanager
+universe = grid
+remote_initialdir=/home/grid1/grid-class/sas
+output = test-input-file.out
+error=test-input-file.error
+log = test-input-file.log
+queue

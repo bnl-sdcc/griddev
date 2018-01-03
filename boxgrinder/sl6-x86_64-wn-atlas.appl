@@ -1,0 +1,131 @@
+name: sl6-x86_64-wn-atlas
+summary: SL 6 ATLAS OSG worker node with BNL_CLOUD config
+version: 1
+release: 11
+
+os:
+  name: sl
+  version: 6
+  password: griddev
+
+hardware:
+  cpus: 1
+  memory: 2304
+  partitions:
+    "/":
+      size: 5
+      
+appliances:
+  - sl6-x86_64-wn-osg-batch
+      
+packages:
+  - @base
+  - @additional-devel
+  - @legacy-unix
+  - @compat-libraries
+  - @development
+  - @scientific
+  - bc
+  - blas
+  - blas.i686
+  - blas-devel
+  - blas-devel.i686
+  - compat-db.i686
+  - compat-db
+  - compat-openldap.i686     
+  - compat-openldap  
+  - compat-readline5
+  - compat-readline5.i686
+  - cvmfs
+  - fuse
+  - lfc-python
+  - ncurses
+  - ncurses-libs.i686  
+  - compat-glibc   
+  - compat-glibc-headers     
+  - compat-libf2c-34.i686     
+  - compat-libf2c-34   
+  - libgcc
+  - libgcc.i686
+  - freetype
+  - freetype.i686
+  - ghostscript
+  - ghostscript.i686
+  - giflib
+  - giflib.i686
+  - glibc.i686
+  - HEP_OSlibs_SL6     
+  - libaio
+  - libaio.i686
+  - lapack.i686               
+  - lapack
+  - libevent-devel    
+  - compat-libgfortran-41.i686     
+  - compat-libgfortran-41
+  - libgfortran.i686     
+  - libgfortran
+  - libxml2-devel     
+  - libxml2-devel.i686    
+  - libXpm.i686   
+  - libXpm    
+  - openssl098e.i686      
+  - openssl098e    
+  - openssl.i686
+  - procmail
+  - sharutils
+  - sqlite
+  - sqlite.i686
+  
+default_repos: false # default is true
+
+repos:
+
+  - name: "cvmfs"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel6/cvmfs-2013-04-09/x86_64/"    
+
+  - name: "racf-grid-testing"
+    baseurl: "http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64"
+
+
+
+files:
+
+# CVMFS settings
+  "/etc":
+    - "sysconfig/modules/fuse.modules"
+    - "cvmfs/default.local" 
+    - "cvmfs/domain.d/cern.ch.local"
+    - "cvmfs/config.d/alice.cern.ch.conf"
+    - "cvmfs/config.d/lcd.cern.ch.conf"
+    - "cvmfs/config.d/sft.cern.ch.local"
+    - "cvmfs/config.d/hepsoft.cern.ch.conf"
+    - "cvmfs/config.d/atlas.cern.ch.local"
+    - "cvmfs/config.d/grid.cern.ch.local"
+    - "cvmfs/config.d/atlas-condb.cern.ch.local"
+    - "cvmfs/config.d/atlas-nightlies.cern.ch.local"
+    - "cvmfs/config.d/atlas-nightlies.cern.ch.conf"
+    - "cvmfs/config.d/grid.cern.ch.conf"
+    - "cvmfs/config.d/geant4.cern.ch.local"
+    - "cvmfs/config.d/hone.cern.ch.conf"
+    - "auto.master"
+    - "fuse.conf"
+    - "profile.d/atlas.sh"
+
+# Set up ATLAS Condor info
+    - "condor/config.d/63wn_atlas.config" 
+    
+# Set up ATLAS software area    
+  "/home/osg/app/atlas_app":
+    - "copysetup.sh"
+  "/home/osg/app/atlas_app/local":
+    - "setup.sh"
+
+    
+post:
+  base:
+    - "chmod +x /etc/sysconfig/modules/fuse.modules" 
+    - "chmod +x /home/osg/app/atlas_app/copysetup.sh"
+    - "mkdir -p /home/cvmfs" 
+    - "chown -R cvmfs:cvmfs /home/cvmfs"
+    - "/sbin/chkconfig cvmfs on" 
+    - "/bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel"

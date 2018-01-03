@@ -1,0 +1,170 @@
+#!/usr/bin/python2.4
+#
+#vihuela.py
+#
+#MARIACHI data upload daemon top level script.
+#Most functionality is in UploadManager and Uploaders 
+#
+# Author: John Hover <jhover@bnl.gov>
+# 
+#Deamonization code from: 
+#  http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66012 
+# 
+# This program is free software; you can redistribute it and/or
+#modify it under the terms of the GNU General Public License
+#as published by the Free Software Foundation; either version 2
+#of the License, or (at your option) any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#
+#You should have received a copy of the GNU General Public License
+#along with this program; if not, write to the Free Software
+#Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+
+import os, sys, logging, getpass, getopt, time, threading 
+from ConfigParser import ConfigParser
+
+### remove this after RPM install to system paths...
+sys.path.append('/home/jhover/devel/vihuela/')
+
+import vihuela.core
+
+# Default constants
+default_config='/etc/vihuela/vihuela.conf'
+configfile=default_config
+disconnect = 1
+debug = 0
+info = 0
+warn = 0
+
+usage = """Usage: vihuela.py [OPTIONS] 
+OPTIONS: 
+    -h --help      print this message
+    -d --debug     print debug messages
+    -v --verbose   print verbose information
+    -C --config    path to config file [/etc/vihuela/vihuela.conf]
+    -n --nodaemon    disconnect from invocation shell
+
+    """ 
+# Handle command line options
+argv = sys.argv[1:]
+try:
+    opts, args = getopt.getopt(argv, 
+                               "hdvc:n", 
+                               ["help", 
+                                "debug", 
+                                "verbose", 
+                                "config",
+                                "nodaemon",
+                                ])
+except getopt.GetoptError:
+    print "Unknown option..."
+    print usage                          
+    sys.exit(1)        
+for opt, arg in opts:
+    if opt in ("-h", "--help"):
+        print usage                     
+        sys.exit()            
+    elif opt in ("-d", "--debug"):
+        debug = 1
+    elif opt in ("-v", "--verbose"):
+        info = 1
+    elif opt in ("-c","--config"):
+        configfile = arg
+    elif opt in ("-n","--nodaemon"):
+        disconnect = 0
+
+# Read in config file
+config=ConfigParser()
+config.read(['config/vihuela.conf', default_config , configfile ])
+
+# Set up logging. 
+FORMAT="%(asctime)s [ %(levelname)s ] %(message)s"
+logging.basicConfig(format=FORMAT)
+log = logging.getLogger()
+loglev = config.get('daemon','loglevel').lower()
+
+if loglev == 'debug':
+    log.setLevel(logging.DEBUG)
+elif loglev == 'info':
+    log.setLevel(logging.INFO)
+elif loglev == 'warn':
+    log.setLevel(logging.WARN)
+
+# Override with command line switches
+if debug: 
+    log.setLevel(logging.DEBUG)
+if info:
+    log.setLevel(logging.INFO)
+  
+  
+#
+# Handle running as daemon...  
+#
+if disconnect:
+    # Do first fork.
+    try: 
+        pid = os.fork() 
+        if pid > 0:
+            sys.exit(0) # Exit first parent.
+    except OSError, e: 
+        sys.stderr.write ("fork #1 failed: (%d) %s\n" % (e.errno, e.strerror)    )
+        sys.exit(1)
+        
+    # Decouple from parent environment.
+    os.chdir("/") 
+    os.umask(0) 
+    os.setsid() 
+    
+    # Do second fork.
+    try: 
+        pid = os.fork() 
+        if pid > 0:
+            #print "Daemon PID %d" % pid
+            open(config.get('daemon','pidfile'),'w').write("%d"%pid)
+            sys.exit(0) # Exit second parent.
+    except OSError, e: 
+        sys.stderr.write ("fork #2 failed: (%d) %s\n" % (e.errno, e.strerror)    )
+        sys.exit(1)
+        
+    # Now I am a daemon!
+    stdin='/dev/null'
+    stdout=config.get('daemon','logfile')
+    stderr=config.get('daemon','logfile')
+    
+    # Redirect standard file descriptors.
+    si = file(stdin, 'r')
+    so = file(stdout, 'a+')
+    se = file(stderr, 'a+', 0)
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
+#
+# Log daemon config variables
+#
+pairlist = config.items('daemon')
+s= ''
+for (key,val) in pairlist:
+    s += "   %s = %s\n" % (key,val) 
+log.debug('vihuela.py: configuration vars:\n%s' % s)
+
+#
+# Get things started...
+#
+log.debug('vihuela: Creating ThreadManager...')
+manager = vihuela.core.ThreadManager(config)
+log.debug('vihuela: beginning Manager...')
+manager.mainloop()
+log.debug('vihuela: Removing pid file...')
+pidfile = config.get('daemon','pidfile')
+try:
+	os.remove(pidfile)
+except OSError:
+	log.warn("vihuela: Permission problem with pidfile '%s'" % pidfile )
+log.debug('vihuela.py: Done.')

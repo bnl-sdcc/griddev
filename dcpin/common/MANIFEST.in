@@ -1,0 +1,5 @@
+include *.txt 
+recursive-include examples *.txt *.py
+recursive-include docs *.txt *.py 
+recursive-include dcpin *.py *.pyc
+prune examples/sample?/build

@@ -1,0 +1,14 @@
+This condor submit example illustrates how to do multiple runs of the same program from the same submit file. The program called 'myapp' requires two command line arguments - the first a name and the second a number. 
+
+TO run the myapp program interactively, type:
+
+myapp Mary 60
+
+and the output will be:
+
+Hi Mary. The sine of 60 is 0.866025
+
+In the submit file the 'arguments' line is followed by 'queue' and this is repeated a total of 3 times. Note that the output, error and log file names include '$(Process)' which is the condor job ID number. The extension of the files will ID#.0, ID#.1 and ID#.2.
+
+
+

@@ -1,0 +1,22 @@
+lcg-cr -v --vo atlas -d lcg03.usatlas.bnl.gov -l lfn:/grid/atlas/jhover-testfile-2007-02-21 file:///usatlas/u/jhover/lfchosts.txt
+
+[jhover@acas0202 test-rm]$ lcg-cr -v --vo atlas -d lcg03.usatlas.bnl.gov -l
+lfn:/grid/atlas/jhover-testfile-2007-02-21
+file:///usatlas/u/jhover/lfchosts.txt
+Using grid catalog type: lfc
+Using grid catalog : prod-lfc-atlas-central.cern.ch
+Source URL: file:///usatlas/u/jhover/lfchosts.txt
+File size: 85
+VO name: atlas
+Destination specified: lcg03.usatlas.bnl.gov
+Destination URL for copy:
+gsiftp://lcg03.usatlas.bnl.gov/home/storage/atlas/generated/2007-02-21/file3d0d74d1-491f-40e8-9d24-541ab7dbc687
+# streams: 1
+# set timeout to 0 seconds
+Alias registered in Catalog: lfn:/grid/atlas/jhover-testfile-2007-02-21
+           85 bytes      0.14 KB/sec avg      0.14 KB/sec inst
+Transfer took 1120 ms
+Destination URL registered in Catalog:
+sfn://lcg03.usatlas.bnl.gov/home/storage/atlas/generated/2007-02-21/file3d0d74d1-491f-40e8-9d24-541ab7dbc687
+guid:bce47719-ed16-472e-a1ea-f28a89b4b9f1
+

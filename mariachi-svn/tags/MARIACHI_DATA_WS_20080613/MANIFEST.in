@@ -1,0 +1,6 @@
+include *.txt *.py *.html
+recursive-include mariachi *.py 
+recursive-include scripts *.py *.sh
+recursive-include misc *.txt *.sh *.uxf *.jpg *.png
+recursive-include config *.conf magic
+recursive-include share *.html

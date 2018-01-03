@@ -1,0 +1,18 @@
+#!/bin/bash
+# 
+# Runs arbitrary commands via SSH by IP
+# echo <IP1> <IP2> | runcommandsbyip.sy <COMMAND>
+#
+# Use double quotes in command for spaces or multiple commands
+# E.g. 
+#   cloud-list-all.py  | awk '{ print $3}'  | xargs echo | runcommandbyip.sh "cat /etc/condor/config.d/50cloud_condor.config | grep START"
+#
+
+while read line; do
+    echo $line
+    for ip in $line; do 
+        #echo "IP: $ip"
+        echo ssh root@$ip "$1"
+        ssh -q root@$ip "$1"
+    done
+done

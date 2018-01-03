@@ -1,0 +1,51 @@
+
+
+[jhover@manager01 bin]$ voms-admin --host voms.cern.ch --vo atlas list-members /atlas
+/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=hanawa/CN=678589/CN=Keita Hanawa, /DC=ch/DC=cern/CN=CERN Trusted Certification Authority
+/C=AT/O=AustrianGrid/OU=UIBK/OU=astro/OU=HEPHY/CN=Brigitte Epp, /C=AT/O=AustrianGrid/OU=Certification Authority/CN=Certificate Issuer
+/C=CA/O=Grid/OU=westgrid.ca/CN=Roghaiyeh Dastranj Tabrizi_42, /C=CA/O=Grid/CN=Grid Canada Certificate Authority
+
+
+voms-admin --host voms.cern.ch --vo atlas list-groups
+ /atlas
+    /atlas/alarm
+    /atlas/au
+    /atlas/ca
+    /atlas/calib-muon
+    /atlas/cern
+    /atlas/ch
+    /atlas/cn
+    /atlas/cz
+    /atlas/de
+    /atlas/det-alfa
+    /atlas/det-indet
+    /atlas/det-larg
+    /atlas/det-muon
+    /atlas/det-slhc
+    /atlas/det-tile
+    /atlas/es
+    /atlas/fr
+    /atlas/il
+    /atlas/it
+    /atlas/jp
+    /atlas/lcg1
+    /atlas/nl
+    /atlas/no
+    /atlas/perf-egamma
+    /atlas/perf-flavtag
+    /atlas/perf-idtracking
+    /atlas/perf-jets
+
+   def setUserAttribute(self,dn,ca,attrName,attrValue):
+   def createAttributeClass(self,name, description, unique):
+   def listUserAttributes(self,dn,ca):
+    
+ [jhover@manager01 bin]$ voms-admin --nousercert --host voms.cern.ch --vo atlas list-user-attributes "/DC=org/DC=doegrids/OU=People/CN=Lianliang Ma 14340" "/DC=org/DC=DOEGrids/OU=Certificate Authorities/CN=DOEGrids CA 1"
+nickname=lianliang
+    
+  [jhover@manager01 bin]$ voms-admin --nousercert --host voms.cern.ch --vo atlas create-user DN CA
+    
+    voms-admin --vo test_vo add-ACL-entry /test_vo .globus/usercert.pem ALL true
+    
+    
+    

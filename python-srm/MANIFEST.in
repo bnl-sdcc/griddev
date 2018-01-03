@@ -1,0 +1,2 @@
+include *.txt *.c *.h *.i *.nsmap  *.wsdl *.py *.so MANIFEST.in
+prune examples/sample?/build

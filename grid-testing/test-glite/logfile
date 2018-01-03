@@ -1,0 +1,21 @@
+*****************************
+Fri Jun 30 21:57:40 2006
+
+Function Called:
+/opt/glite/bin/glite-job-submit
+
+Options specified:
+--logfile   ./logfile   
+--resource   lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas   
+--vo   atlas   
+./simpleGlobusOne.jdl   
+*****************************
+---No Errors found---
+Selected Virtual Organisation name (from --vo option): atlas
+Connecting to host lcg02.usatlas.bnl.gov, port 7772
+Logging to host lcg05.usatlas.bnl.gov, port 9002
+**** Error: API_NATIVE_ERROR ****  
+Error while calling the "LOG::log_start" native api 
+Unable to perform edg_wll_LogTransferSTART at: lcg05.usatlas.bnl.gov:9002
+Transport endpoint is not connected (edg_wll_LogEvent(): ;; Transport endpoint is not connected;; Logging library ERROR: ;; Transport endpoint is not connected;; edg_wll_gss_connect();; GSS Error: system error occured; )
+

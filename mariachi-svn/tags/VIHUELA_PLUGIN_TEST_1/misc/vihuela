@@ -1,0 +1,114 @@
+#!/bin/bash
+#
+# vihuela init script
+# Tested on Redhat Linux 4.3
+#
+# uploadd-init.sh:       Starts Vihuela,  the Mariachi Upload Daemon
+#
+#
+# chkconfig: 2345 90 10
+# description: Starts and stops the upload daemon at boot time and shutdown. 
+#
+# processname: vihuela.py
+# hide: true
+
+. /etc/init.d/functions
+
+prog=vihuela
+fullprog=/usr/sbin/$prog
+
+start() {
+   echo -n $"Starting $prog: "
+   daemon $fullprog   
+   ret=$?
+   [ $ret -eq 0 ] && touch /var/lock/subsys/$prog
+   echo
+   return $ret
+}
+
+stop() {
+   echo -n $"Shutting down $prog: "
+   killproc $prog -INT
+   ret=$?
+   [ $ret -eq 0 ] && rm -f /var/lock/subsys/$prog
+   echo
+   return $ret
+}
+
+
+reload() {
+   if [ -f /var/lock/subsys/$prog ]; then
+      echo -n $"Reloading $prog: "
+      killproc $prog -INT 
+      ret=$?
+      echo
+      return $ret
+   else
+      stop
+      start
+   fi
+}
+
+restart() {
+   echo $"Restarting $prog:"
+   stop
+   start
+}
+
+
+
+
+mystatus() {
+        local base=$prog
+        local pid
+
+        # Next try "/var/run/*.pid" files
+        if [ -f /var/run/${base}.pid ] ; then
+                read pid < /var/run/${base}.pid
+                if [ -n "$pid" ]; then
+                	    commnd=`ps -p $pid -o comm=`
+                        if [ "$commnd" = "$base" ]; then
+                        	echo $"${base} (pid $pid) is running..."
+ 							return 0
+                		else
+                        	echo $"${base} dead but pid file exists"
+                        	return 1
+						fi
+                fi
+        fi
+ 
+        # See if /var/lock/subsys/${base} exists
+        if [ -f /var/lock/subsys/${base} ]; then
+                echo $"${base} dead but subsys locked"
+                return 2
+        fi
+        echo $"${base} is stopped"
+        return 3
+}
+
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+    restart
+    ;;
+  reload)
+        reload
+        ;;
+  condrestart)
+        [ -f /var/lock/subsys/$prog ] && reload || :
+        ;;
+  status)
+        mystatus 
+        ;;
+  *)
+        echo $"Usage: $prog {start|stop|status|restart|reload|condrestart}"
+        exit 1
+esac
+
+exit $?

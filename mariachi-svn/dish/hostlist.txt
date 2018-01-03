@@ -1,0 +1,3 @@
+onehost.mydomain.com
+twohost.mydomain.com
+threehost.mydomain.com

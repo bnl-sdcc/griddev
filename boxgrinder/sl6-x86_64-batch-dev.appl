@@ -1,0 +1,75 @@
+name: sl6-x86_64-batch
+summary: SL 6 for usage as execute machine with Condor Batch system. 
+release: 1
+release: 2
+os:
+  name: sl
+  version: 6
+  password: griddev
+  
+hardware:
+  cpus: 1
+  memory: 1024
+  partitions:
+    "/":
+      size: 5
+
+appliances:
+  - sl6-x86_64-base
+      
+packages:
+  - condor
+
+repos:
+  - name: "htcondor-stable"
+    baseurl: "http://research.cs.wisc.edu/htcondor/yum/stable/rhel6"
+
+default_repos: false # default is true
+
+files:
+  "/etc":
+    - "condor/condor_config.local"
+    - "condor/config.d/50cloud_condor.config"
+    - "condor/config.d/60wnbase.config"
+    - "init.d/condorconfig"
+    - "sysconfig/condorconfig"
+#
+# This should be a temporary inclusion for EC2 spot price termination detection. 
+#
+    - "init.d/detect-shutdowns"
+
+
+# This is an empty file in SVN. You'll need to add your actual password before building.
+# Or, arrange some other method (UserData or script) to set it. 
+    - "condor/password_file"
+
+  "/usr/libexec":
+    - "jobwrapper.sh"
+      
+post:
+  base: 
+# Condor setup    
+    - "/usr/sbin/useradd slot1"
+    - "/usr/sbin/useradd slot2"
+    - "/usr/sbin/useradd slot3"
+    - "/usr/sbin/useradd slot4"
+    - "/usr/sbin/useradd slot5"
+    - "/usr/sbin/useradd slot6"
+    - "/usr/sbin/useradd slot7"
+    - "/usr/sbin/useradd slot8"
+    - "mkdir -p /home/condor/execute"
+    - "chown -R condor:condor /home/condor"
+    - "chmod ugo+rwx /home/condor/execute"
+    - "chmod +t /home/condor/execute"
+    - "chown root:root /usr/libexec/jobwrapper.sh"    
+    - "chmod +x /usr/libexec/jobwrapper.sh"
+    - "chown root:root /etc/condor/password_file"
+    - "chmod o-rwx /etc/condor/password_file"
+    - "chmod +x /etc/init.d/condorconfig"
+    - "/sbin/chkconfig condor on"
+    - "/sbin/chkconfig condorconfig on"
+#
+# This should be a temporary inclusion for EC2 spot price termination detection. 
+#
+    - "/sbin/chkconfig detect-shutdowns on"
+

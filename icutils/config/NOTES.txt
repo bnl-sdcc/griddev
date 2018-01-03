@@ -1,0 +1,67 @@
+General background
+======================================
+Cantor talk on non-web:
+http://www.internet2.edu/presentations/fall11/20111004-cantor-non-web.pdf
+
+
+IdP install
+=====================================
+grid10.racf.bnl.gov
+https://www.switch.ch/aai/docs/shibboleth/SWITCH/latest/idp/deployment/
+https://tuakiri.ac.nz/confluence/display/Tuakiri/Installing+a+Shibboleth+2.x+IdP
+
+rhel6 on jetty with openjdk 1.7
+
+https://wiki.shibboleth.net/confluence/display/SHIB2/IdPInstall
+https://wiki.shibboleth.net/confluence/display/SHIB2/IdPJetty7Prepare#IdPJetty7Prepare-VersionRequirements
+http://techtraits.com/jetty9install/
+
+  
+WebDAV Install
+=================================
+grid07.racf.bnl.gov
+-- split out http vs. https config directories
+-- mod_ssl
+-- httpd
+-- fetch-crl
+-- ca-certificates
+-- generate host cert (use commercial cert).
+
+
+ssl.conf
+===========================================
+LoadModule ssl_module modules/mod_ssl.so
+Listen 443
+<VirtualHost _default_:443>
+  TraceEnable off
+  SSLEngine on
+  SSLCertificateFile /etc/grid-security/localhost.crt
+  SSLCertificateKeyFile /etc/grid-security/localhost.key
+  SSLCACertificatePath /etc/grid-security/certificates
+  Include https.d/*.conf
+</VirtualHost>
+
+[root@grid07 https.d]# cat data.conf 
+Alias /data "/var/www/data"
+<Directory "/var/www/data">
+    Dav On
+    AuthType Basic
+    AuthName DAV
+    AuthUserFile data.passwd
+    <LimitExcept GET HEAD OPTIONS PROPFIND>
+        Require valid-user
+    </LimitExcept>
+
+    Options Indexes MultiViews FollowSymLinks
+</Directory>
+
+SP Install
+======================================
+grid07.racf.bnl.gov
+https://wiki.shibboleth.net/confluence/display/SHIB2/NativeSPLinuxRPMInstall
+https://tuakiri.ac.nz/confluence/display/Tuakiri/Installing+Shibboleth+2.x+SP+on+RedHat+based+Linux
+
+https://www.incommon.org/federation/attributesummary.html
+
+
+ 

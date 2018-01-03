@@ -1,0 +1,21 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# Configuration for schedd
+# 
+DAEMON_LIST= $(DAEMON_LIST) SCHEDD
+SUBMIT_EXPRS = $(SUBMIT_EXPRS) JobLeaseDuration
+JobLeaseDuration = 1800
+
+
+# Gridmanager config
+GRIDMANAGER_MAX_PENDING_REQUESTS = 25
+GRIDMANAGER_MAX_SUBMITTED_JOBS_PER_RESOURCE_EC2 = 30000
+GRIDMANAGER_JOB_PROBE_INTERVAL = 600
+GRIDMANAGER_JOB_PROBE_INTERVAL_EC2 = 600
+
+<% if $htcondor::use_dedicated_scheduler { -%>
+DedicatedScheduler = "DedicatedScheduler@<%= $htcondor::dedicated_scheduler %>"
+UNUSED_CLAIM_TIMEOUT = 60
+<% } -%>
+
+

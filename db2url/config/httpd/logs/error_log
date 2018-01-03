@@ -1,0 +1,752 @@
+[Wed Oct 17 14:40:41 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:40:41 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:40:41 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:40:41 2007] [notice] Digest: done
+[Wed Oct 17 14:40:41 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:40:41 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:42:51 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 14:53:45 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:53:45 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:53:45 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:53:45 2007] [notice] Digest: done
+[Wed Oct 17 14:53:45 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:53:45 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:54:25 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/favicon.ico
+[Wed Oct 17 14:56:07 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 14:56:11 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 14:56:11 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 14:56:11 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:56:11 2007] [notice] Digest: done
+[Wed Oct 17 14:56:11 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:56:11 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:57:04 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 14:57:04 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:57:04 2007] [notice] Digest: done
+[Wed Oct 17 14:57:04 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:57:04 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:59:14 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 14:59:14 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 14:59:14 2007] [notice] Digest: done
+[Wed Oct 17 14:59:14 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 14:59:14 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp: Traceback (most recent call last):
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 291, in HandlerDispatch\n    arg=req, silent=hlist.silent)
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 531, in resolve_object\n    raise AttributeError, s
+[Wed Oct 17 14:59:35 2007] [error] [client 127.0.0.1] PythonHandler testmodp: AttributeError: module '/home/jhover/devel/mod-python-template/testmodp.pyc' contains no 'handler'
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp: Traceback (most recent call last):
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 291, in HandlerDispatch\n    arg=req, silent=hlist.silent)
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 531, in resolve_object\n    raise AttributeError, s
+[Wed Oct 17 14:59:39 2007] [error] [client 127.0.0.1] PythonHandler testmodp: AttributeError: module '/home/jhover/devel/mod-python-template/testmodp.pyc' contains no 'handler'
+[Wed Oct 17 15:02:05 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:02:05 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:02:05 2007] [notice] Digest: done
+[Wed Oct 17 15:02:05 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:02:05 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:02:10 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:02:30 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:02:40 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:04:40 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:04:41 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:04:41 2007] [notice] Digest: done
+[Wed Oct 17 15:04:41 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:04:41 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:04:53 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:05:01 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:05:04 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:06:04 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 15:06:08 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 15:06:08 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 15:06:08 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:06:08 2007] [notice] Digest: done
+[Wed Oct 17 15:06:08 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:06:08 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:08:51 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 15:08:52 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 15:08:52 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 15:08:52 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:08:52 2007] [notice] Digest: done
+[Wed Oct 17 15:08:52 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:08:52 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:09:00 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:09:07 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:09:17 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:02 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:07 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:15 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:10:21 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:14:12 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:14:25 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/testmodp
+[Wed Oct 17 15:25:49 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:25:49 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:25:49 2007] [notice] Digest: done
+[Wed Oct 17 15:25:49 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:25:49 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:25:58 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:26:05 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:09 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:14 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:28 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:26:31 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/testmodp
+[Wed Oct 17 15:28:21 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 15:28:21 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 15:28:21 2007] [notice] Digest: done
+[Wed Oct 17 15:28:21 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 15:28:21 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 15:28:32 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:28:39 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:38:33 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 15:38:37 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:26:25 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:28:03 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:28:03 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:28:03 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:28:03 2007] [notice] Digest: done
+[Wed Oct 17 16:28:03 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:28:03 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:28:08 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:28:14 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:28:47 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:28:47 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:28:47 2007] [notice] Digest: done
+[Wed Oct 17 16:28:47 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:28:47 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:28:54 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:29:35 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:29:35 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:29:35 2007] [notice] Digest: done
+[Wed Oct 17 16:29:35 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:29:35 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:29:45 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:30:54 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:30:54 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:30:54 2007] [notice] Digest: done
+[Wed Oct 17 16:30:54 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:31:42 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:31:42 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:31:42 2007] [notice] Digest: done
+[Wed Oct 17 16:31:42 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:31:42 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:31:51 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:33:21 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:33:21 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:33:21 2007] [notice] Digest: done
+[Wed Oct 17 16:33:21 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:33:21 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:33:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:33:41 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:36:50 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:36:59 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:36:59 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:36:59 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:36:59 2007] [notice] Digest: done
+[Wed Oct 17 16:36:59 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:36:59 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:37:11 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:11 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:37:16 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:16 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:37:51 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:37:51 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/modpystatus.py
+[Wed Oct 17 16:38:03 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:38:03 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/modpystatus.py
+[Wed Oct 17 16:39:28 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:39:28 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:39:28 2007] [notice] Digest: done
+[Wed Oct 17 16:39:28 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:39:28 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:39:39 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/testmodp
+[Wed Oct 17 16:39:46 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:39:46 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:39:53 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:39:53 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:41:09 2007] [notice] SIGHUP received.  Attempting to restart
+[Wed Oct 17 16:41:09 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:41:09 2007] [notice] Digest: done
+[Wed Oct 17 16:41:09 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:41:09 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:41:12 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:41:12 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:41:14 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:41:14 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:42:30 2007] [notice] caught SIGTERM, shutting down
+[Wed Oct 17 16:42:32 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Wed Oct 17 16:42:32 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 17 16:42:32 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Oct 17 16:42:32 2007] [notice] Digest: done
+[Wed Oct 17 16:42:32 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Oct 17 16:42:32 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Wed Oct 17 16:42:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:42:36 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 16:43:41 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 16:43:41 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 17:09:28 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Oct 17 17:09:28 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/mod-python-template/src/testmodp.py
+[Wed Oct 17 17:12:53 2007] [notice] caught SIGTERM, shutting down
+[Wed Dec 05 18:08:12 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Dec 05 18:08:12 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Dec 05 18:08:12 2007] [notice] Digest: done
+[Wed Dec 05 18:08:12 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Wed Dec 05 18:08:12 2007] [notice] LDAP: SSL support unavailable
+[Wed Dec 05 18:08:12 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Dec 05 18:08:12 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Wed Dec 05 18:10:23 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/favicon.ico
+[Wed Dec 05 18:10:23 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/mod-python-template/html/favicon.ico
+[Wed Dec 05 18:10:51 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:10:51 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:11:23 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:11:23 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:11:32 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:11:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:11:38 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:11:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:11:42 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:11:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:12:28 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:12:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:12:32 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:12:32 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:13:01 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:13:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:13:05 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:05 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:13:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 134, in handler\n    req.form = util.FieldStorage(req, keep_blank_values=1)
+[Wed Dec 05 18:13:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: AttributeError: 'module' object has no attribute 'FieldStorage'
+[Wed Dec 05 18:13:09 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:09 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:19 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:19 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:19 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:19 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:13:19 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 134, in handler\n    req.form = util.FieldStorage(req, keep_blank_values=1)
+[Wed Dec 05 18:13:19 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: AttributeError: 'module' object has no attribute 'FieldStorage'
+[Wed Dec 05 18:13:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:36 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:13:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 134, in handler\n    req.form = util.FieldStorage(req, keep_blank_values=1)
+[Wed Dec 05 18:13:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: AttributeError: 'module' object has no attribute 'FieldStorage'
+[Wed Dec 05 18:13:39 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:39 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:13:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 134, in handler\n    req.form = util.FieldStorage(req, keep_blank_values=1)
+[Wed Dec 05 18:13:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: AttributeError: 'module' object has no attribute 'FieldStorage'
+[Wed Dec 05 18:13:44 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:44 2007] [notice] mod_python: (Re)importing module 'status' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:44 2007] [notice] mod_python: (Re)importing module 'index' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:44 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:13:44 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:13:44 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 98, in handler\n    path=[path])
+[Wed Dec 05 18:13:44 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 454, in import_module\n    f, p, d = imp.find_module(parts[i], path)
+[Wed Dec 05 18:13:44 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: No module named status
+[Wed Dec 05 18:13:53 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:53 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:13:59 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:13:59 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:15:26 2007] [notice] caught SIGTERM, shutting down
+[Wed Dec 05 18:15:34 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Dec 05 18:15:34 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Dec 05 18:15:34 2007] [notice] Digest: done
+[Wed Dec 05 18:15:34 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Wed Dec 05 18:15:34 2007] [notice] LDAP: SSL support unavailable
+[Wed Dec 05 18:15:34 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Dec 05 18:15:34 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Wed Dec 05 18:15:52 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:15:52 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:18:17 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:18:17 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:21:44 2007] [notice] caught SIGTERM, shutting down
+[Wed Dec 05 18:22:54 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Dec 05 18:22:54 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Dec 05 18:22:54 2007] [notice] Digest: done
+[Wed Dec 05 18:22:54 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Wed Dec 05 18:22:54 2007] [notice] LDAP: SSL support unavailable
+[Wed Dec 05 18:22:54 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Dec 05 18:22:54 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Wed Dec 05 18:23:04 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 287, in HandlerDispatch\n    log=debug)
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 457, in import_module\n    module = imp.load_module(mname, f, p, d)
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 32, in ?\n    import util
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 23, in ?\n    import tempfile
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/tempfile.py", line 33, in ?\n    from random import Random as _Random
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/random.py", line 42, in ?\n    from math import log as _log, exp as _exp, pi as _pi, e as _e
+[Wed Dec 05 18:23:04 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: /usr/lib/python2.3/lib-dynload/mathmodule.so: undefined symbol: PyFPE_jbuf
+[Wed Dec 05 18:41:43 2007] [notice] caught SIGTERM, shutting down
+[Wed Dec 05 18:41:44 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Dec 05 18:41:44 2007] [notice] Digest: generating secret for digest authentication ...
+[Wed Dec 05 18:41:44 2007] [notice] Digest: done
+[Wed Dec 05 18:41:44 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Wed Dec 05 18:41:44 2007] [notice] LDAP: SSL support unavailable
+[Wed Dec 05 18:41:44 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Wed Dec 05 18:41:45 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Wed Dec 05 18:41:58 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:41:58 2007] [notice] mod_python: (Re)importing module 'index' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:41:58 2007] [notice] mod_python: (Re)importing module 'index' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:41:58 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:41:58 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:41:58 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 98, in handler\n    path=[path])
+[Wed Dec 05 18:41:58 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 454, in import_module\n    f, p, d = imp.find_module(parts[i], path)
+[Wed Dec 05 18:41:58 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ImportError: No module named index
+[Wed Dec 05 18:42:08 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:42:08 2007] [notice] mod_python: (Re)importing module 'modpystatus' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:42:34 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:42:34 2007] [notice] mod_python: (Re)importing module 'modpystatus' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:42:38 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:42:38 2007] [notice] mod_python: (Re)importing module 'modpystatus' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:42:46 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:42:46 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:42:54 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:42:54 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:46:02 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:46:02 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:55:42 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Wed Dec 05 18:55:42 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 25, in dbquery\n    req.write("Database &s selected." % database)
+[Wed Dec 05 18:55:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: not all arguments converted during string formatting
+[Wed Dec 05 18:55:58 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:56:12 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Wed Dec 05 18:56:31 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 16:52:11 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 16:52:17 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:32:18 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:32:18 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:30 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:30 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:39 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    def dbquery(req,database="test"):
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:39 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:40 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:40 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:42 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:42 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:45 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:45 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:53 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:53 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:33:55 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 18, in dbquery\n    conn = MySQLdb.connect( dbhost=config.get('global','dbhost'),
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/ConfigParser.py", line 505, in get\n    raise NoSectionError(section)
+[Thu Dec 06 17:33:55 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NoSectionError: No section: 'global'
+[Thu Dec 06 17:34:21 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 21, in dbquery\n    dbdatabase=config.get('global','dbdatabase')
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/MySQLdb/__init__.py", line 75, in Connect\n    return Connection(*args, **kwargs)
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/MySQLdb/connections.py", line 164, in __init__\n    super(Connection, self).__init__(*args, **kwargs2)
+[Thu Dec 06 17:34:22 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: 'dbdatabase' is an invalid keyword argument for this function
+[Thu Dec 06 17:34:46 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 21, in dbquery\n    dbdatabase=config.get('global','dbdatabase')
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/MySQLdb/__init__.py", line 75, in Connect\n    return Connection(*args, **kwargs)
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/MySQLdb/connections.py", line 164, in __init__\n    super(Connection, self).__init__(*args, **kwargs2)
+[Thu Dec 06 17:34:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: 'database' is an invalid keyword argument for this function
+[Thu Dec 06 17:39:55 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:40:31 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:41:54 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 26, in dbquery\n    req.write("Database %s selected.\\n%s" % (config.get('global','dbdatabase'),result))
+[Thu Dec 06 17:41:54 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: not enough arguments for format string
+[Thu Dec 06 17:42:41 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:43:27 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:44:33 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:45:28 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/testmodp.py", line 29, in dbquery
+[Thu Dec 06 17:45:28 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NameError: global name 'item' is not defined
+[Thu Dec 06 17:45:45 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 17:59:14 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 18:03:03 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 18:03:23 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 18:09:24 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 18:20:51 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:10:17 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:13:31 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:14:44 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:16:05 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 34, in dbquery\n    req.write("%s" % item)
+[Thu Dec 06 19:16:05 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: not all arguments converted during string formatting
+[Thu Dec 06 19:17:14 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 34, in dbquery\n    req.write( item)
+[Thu Dec 06 19:17:14 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: argument 1 must be string or read-only buffer, not tuple
+[Thu Dec 06 19:18:01 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/publisher.py", line 136, in handler\n    result = util.apply_fs_data(object, req.form, req=req)
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.3/site-packages/mod_python/util.py", line 361, in apply_fs_data\n    return object(**args)
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 35, in dbquery\n    req.write( col)
+[Thu Dec 06 19:18:01 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: argument 1 must be string or read-only buffer, not int
+[Thu Dec 06 19:18:17 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 06 19:18:47 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:41:48 2007] [notice] caught SIGTERM, shutting down
+[Mon Dec 10 10:41:53 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Dec 10 10:41:53 2007] [notice] Digest: generating secret for digest authentication ...
+[Mon Dec 10 10:41:53 2007] [notice] Digest: done
+[Mon Dec 10 10:41:53 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Mon Dec 10 10:41:53 2007] [notice] LDAP: SSL support unavailable
+[Mon Dec 10 10:41:53 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Mon Dec 10 10:41:54 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Mon Dec 10 10:46:48 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:46:48 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:51:05 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:51:05 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:51:06 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:51:06 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:51:13 2007] [notice] caught SIGTERM, shutting down
+[Mon Dec 10 10:51:15 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Dec 10 10:51:15 2007] [notice] Digest: generating secret for digest authentication ...
+[Mon Dec 10 10:51:15 2007] [notice] Digest: done
+[Mon Dec 10 10:51:15 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Mon Dec 10 10:51:15 2007] [notice] LDAP: SSL support unavailable
+[Mon Dec 10 10:51:15 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Mon Dec 10 10:51:15 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Mon Dec 10 10:51:19 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:51:19 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:52:06 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:52:06 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:52:22 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:52:22 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:52:36 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:52:36 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:53:49 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:53:49 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 10:54:33 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 10:54:33 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:37:33 2007] [notice] caught SIGTERM, shutting down
+[Mon Dec 10 11:37:34 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Dec 10 11:37:34 2007] [notice] Digest: generating secret for digest authentication ...
+[Mon Dec 10 11:37:34 2007] [notice] Digest: done
+[Mon Dec 10 11:37:34 2007] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Mon Dec 10 11:37:34 2007] [notice] LDAP: SSL support unavailable
+[Mon Dec 10 11:37:34 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Mon Dec 10 11:37:34 2007] [notice] Apache/2.0.52 (Scientific Linux) configured -- resuming normal operations
+[Mon Dec 10 11:38:01 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:38:01 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:38:20 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:38:20 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:40:00 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:40:00 2007] [notice] mod_python: (Re)importing module 'testmodp' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:40:39 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:40:39 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:41:43 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:41:43 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:42:20 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:42:20 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:42:22 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:42:22 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:42:23 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Mon Dec 10 11:42:23 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 11:42:30 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 12:05:48 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 12:05:50 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 13:24:36 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 13:24:42 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 13:25:18 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 13:25:22 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Mon Dec 10 13:40:13 2007] [notice] mod_python: (Re)importing module 'db2url' with path set to '['/home/jhover/devel/db2url/src']'
+[Thu Dec 13 13:35:30 2007] [notice] caught SIGTERM, shutting down
+[Thu Dec 13 16:30:58 2007] [notice] SELinux policy enabled; httpd running as context user_u:system_r:unconfined_t
+[Thu Dec 13 16:30:58 2007] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Dec 13 16:30:58 2007] [notice] Digest: generating secret for digest authentication ...
+[Thu Dec 13 16:30:58 2007] [notice] Digest: done
+[Thu Dec 13 16:30:58 2007] [notice] mod_python: Creating 4 session mutexes based on 256 max processes and 0 max threads.
+[Thu Dec 13 16:30:58 2007] [notice] Apache/2.2.3 (Scientific Linux) configured -- resuming normal operations
+[Thu Dec 13 16:31:26 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 16:31:26 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/db2url/html/favicon.ico
+[Thu Dec 13 16:31:34 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 16:31:34 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 16:56:23 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 16:56:23 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 16:56:42 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 16:56:42 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:26:09 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 17:26:09 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:26:39 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 17:26:39 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:28:47 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 17:28:47 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:29:20 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:29:54 2007] [notice] mod_python: (Re)importing module 'mod_python.publisher'
+[Thu Dec 13 17:29:54 2007] [notice] [client 127.0.0.1] Publisher loading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:30:14 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:32:44 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:32:45 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:39:26 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:39:27 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 13 17:47:26 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:36:56 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:36:57 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/db2url/html/favicon.ico
+[Mon Dec 17 15:37:26 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:37:40 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:40:31 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:40:42 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:44:14 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:44:14 2007] [error] [client 127.0.0.1] mod_python.publisher: nothing to publish.
+[Mon Dec 17 15:44:50 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 41, in dbquery\n    req.write(desired_tables)
+[Mon Dec 17 15:44:50 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: argument 1 must be string or read-only buffer, not tuple
+[Mon Dec 17 15:45:26 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 42, in dbquery\n    req.write(t)
+[Mon Dec 17 15:45:26 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: argument 1 must be string or read-only buffer, not tuple
+[Mon Dec 17 15:45:40 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:49:28 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:51:29 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:52:45 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:52:46 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:54:21 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 35, in dbquery\n    req.write("alltables=%s" % alltables)
+[Mon Dec 17 15:54:21 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: not all arguments converted during string formatting
+[Mon Dec 17 15:54:42 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:56:34 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 36, in dbquery\n    for i in len(alltables):
+[Mon Dec 17 15:56:34 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: TypeError: iteration over non-sequence
+[Mon Dec 17 15:57:30 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:57:47 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:57:54 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:58:43 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:59:11 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:59:54 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:59:56 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 15:59:57 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Mon Dec 17 16:00:15 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 12:44:41 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 12:44:41 2007] [error] [client 127.0.0.1] File does not exist: /home/jhover/devel/db2url/html/favicon.ico
+[Thu Dec 20 12:44:51 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 12:55:56 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:00:24 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 49, in dbquery\n    for t in allowed_tables:
+[Thu Dec 20 14:00:24 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NameError: global name 'allowed_tables' is not defined
+[Thu Dec 20 14:06:20 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 44, in dbquery\n    for t in allowed_tables:
+[Thu Dec 20 14:06:20 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NameError: global name 'allowed_tables' is not defined
+[Thu Dec 20 14:06:47 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 61, in dbquery\n    req.write("table:%s is not in allowed: %s\\n" % (table, allowed_tables))
+[Thu Dec 20 14:06:47 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: NameError: global name 'allowed_tables' is not defined
+[Thu Dec 20 14:07:48 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:08:24 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 14:09:08 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 16:59:53 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:00:08 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:00:20 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:00:24 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:00:29 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 49, in dbquery\n    cur.execute("select * from %s ;" % table)
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/MySQLdb/cursors.py", line 163, in execute\n    self.errorhandler(self, exc, value)
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/MySQLdb/connections.py", line 35, in defaulterrorhandler\n    raise errorclass, errorvalue
+[Thu Dec 20 17:00:29 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ProgrammingError: (1146, "Table 'test.atable' doesn't exist")
+[Thu Dec 20 17:01:11 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:01:19 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:01:24 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 49, in dbquery\n    cur.execute("select * from %s ;" % table)
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/MySQLdb/cursors.py", line 163, in execute\n    self.errorhandler(self, exc, value)
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/MySQLdb/connections.py", line 35, in defaulterrorhandler\n    raise errorclass, errorvalue
+[Thu Dec 20 17:01:36 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!' at line 1")
+[Thu Dec 20 18:13:12 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 61, in dbquery\n    desired_columns = desired_columns
+[Thu Dec 20 18:13:12 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: UnboundLocalError: local variable 'desired_columns' referenced before assignment
+[Thu Dec 20 18:30:38 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 61, in dbquery\n    desired_columns = desired_columns
+[Thu Dec 20 18:30:38 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: UnboundLocalError: local variable 'desired_columns' referenced before assignment
+[Thu Dec 20 18:30:46 2007] [notice] [client 127.0.0.1] Publisher reloading page /home/jhover/devel/db2url/src/db2url.py
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: Traceback (most recent call last):
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n    result = object(req)
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 213, in handler\n    published = publish_object(req, object)
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/publisher.py", line 412, in publish_object\n    return publish_object(req,util.apply_fs_data(object, req.form, req=req))
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/usr/lib/python2.4/site-packages/mod_python/util.py", line 439, in apply_fs_data\n    return object(**args)
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher:   File "/home/jhover/devel/db2url/src/db2url.py", line 61, in dbquery\n    desired_columns = desired_columns
+[Thu Dec 20 18:30:46 2007] [error] [client 127.0.0.1] PythonHandler mod_python.publisher: UnboundLocalError: local variable 'desired_columns' referenced before assignment

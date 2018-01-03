@@ -1,0 +1,21 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:meta="http://namespaces.zope.org/meta">
+
+  <subscriber
+     for=".interfaces.IAnnouncement
+         Products.DCWorkflow.interfaces.IAfterTransitionEvent"
+     handler=".subscribers.emailListListener"
+  />
+
+  <subscriber
+     for=".interfaces.IAnnouncement
+         Products.DCWorkflow.interfaces.IAfterTransitionEvent"
+     handler=".subscribers.portalMessageModifier"
+  />
+
+
+</configure>

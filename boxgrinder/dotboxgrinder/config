@@ -1,0 +1,34 @@
+plugins:
+  openstack:
+    # gridreserve29 -- Diablo
+    # host: 130.199.153.118
+
+    # gridreserve30.usatlas.bnl.gov -- Essex
+    host: 130.199.153.119 
+    port: 9292
+    #username: admin
+    #password: XXXX
+    #tenant: admin
+    # host: 10.1.0.1          # default: localhost
+    # port: 9292              # default: 9292
+    schema: http            # default: http
+    overwrite: true         # default: false
+    public: true            # default: false
+    
+
+  local:
+    path: /home/libvirt/images   # (required)
+    overwrite: true               # default: false
+    package: true                 # default: true    
+
+  s3:
+    access_key: AKIAJQ734HAMFF3NYSAA                  # (required)
+    secret_access_key: XXXXXXXXXXX        # (required)
+    bucket: racf-cloud-test1                          # (required)
+    account_number: 4904-5788-6385                    # (required)
+    path: /images                                     # default: /
+    cert_file: /home/jhover/ec2-caballer/cert-7OAFL3DGPRVKXFGBJSX3HIQ43MQXH3L3.pem    # required only for ami type
+    key_file: /home/jhover/ec2-caballer/pk-7OAFL3DGPRVKXFGBJSX3HIQ43MQXH3L3.pem       # required only for ami type
+    region: us-east-1                                 # amazon region to upload and register amis in; default: us-east-1
+    snapshot: true                                    # default: false
+    overwrite: false                                  # default: false     

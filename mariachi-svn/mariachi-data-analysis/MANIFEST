@@ -1,0 +1,9 @@
+NOTES.txt
+README.txt
+setup.cfg
+setup.py
+config/analysis.conf
+mariachida/__init__.py
+mariachida/analysis.py
+scripts/mdanalysis
+share/analysis2.R

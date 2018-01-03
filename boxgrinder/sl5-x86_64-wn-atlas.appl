@@ -1,0 +1,119 @@
+name: sl5-x86_64-wn-atlas
+summary: SL 5 ATLAS OSG worker node with BNL_CLOUD config
+version: 2
+release: 0
+
+os:
+  name: sl
+  version: 5
+  password: griddev
+hardware:
+  cpus: 1
+  memory: 2304
+  partitions:
+    "/":
+      size: 5
+      
+appliances:
+  - sl5-x86_64-wn-osg-batch
+      
+packages:
+  - @base
+  - @Development Libraries
+  - @Development Tools
+  - @Legacy Software Development
+  - @fuse
+  - bc
+  - blas
+  - blas.i386
+  - blas-devel
+  - blas-devel.i386
+  - compat-db.i386
+  - compat-db
+  - compat-openldap.i386     
+  - compat-openldap  
+  - compat-readline43
+  - compat-readline43.i386
+  - cvmfs
+  - lfc-python26
+  - ncurses
+  - ncurses.i386
+  - compat-glibc.i386                               
+  - compat-glibc   
+  - compat-glibc-headers     
+  - compat-libf2c-34.i386     
+  - compat-libf2c-34   
+  - compat-libgcc-296.i386
+  - freetype
+  - freetype.i386
+  - ghostscript
+  - ghostscript.i386
+  - giflib
+  - giflib.i386
+  - libaio
+  - libaio.i386
+  - lapack.i386               
+  - lapack
+  - libevent-devel    
+  - libgfortran.i386     
+  - libgfortran
+  - libxml2-devel     
+  - libxml2-devel.i386    
+  - libXpm.i386   
+  - libXpm    
+  - openssl097a.i386      
+  - openssl097a    
+  - openssl.i686
+  - procmail
+  - sharutils
+  - sqlite
+  - sqlite.i386
+  
+default_repos: false # default is true
+
+repos:
+
+  - name: "cvmfs"
+    baseurl: "http://dev.racf.bnl.gov/yum/snapshots/rhel5/cvmfs-2012-06-03/x86_64/"    
+
+files:
+
+# CVMFS settings
+  "/etc":
+    - "sysconfig/modules/fuse.modules"
+    - "cvmfs/default.local" 
+    - "cvmfs/domain.d/cern.ch.local"
+    - "cvmfs/config.d/alice.cern.ch.conf"
+    - "cvmfs/config.d/lcd.cern.ch.conf"
+    - "cvmfs/config.d/sft.cern.ch.local"
+    - "cvmfs/config.d/hepsoft.cern.ch.conf"
+    - "cvmfs/config.d/atlas.cern.ch.local"
+    - "cvmfs/config.d/grid.cern.ch.local"
+    - "cvmfs/config.d/atlas-condb.cern.ch.local"
+    - "cvmfs/config.d/atlas-nightlies.cern.ch.local"
+    - "cvmfs/config.d/atlas-nightlies.cern.ch.conf"
+    - "cvmfs/config.d/grid.cern.ch.conf"
+    - "cvmfs/config.d/geant4.cern.ch.local"
+    - "cvmfs/config.d/hone.cern.ch.conf"
+    - "auto.master"
+    - "fuse.conf"
+    - "profile.d/atlas.sh"
+
+# Set up ATLAS Condor info
+    - "condor/config.d/63wn_atlas.config" 
+    
+# Set up ATLAS software area    
+  "/home/osg/app/atlas_app":
+    - "copysetup.sh"
+  "/home/osg/app/atlas_app/local":
+    - "setup.sh"
+
+    
+post:
+  base:
+    - "chmod +x /etc/sysconfig/modules/fuse.modules" 
+    - "chmod +x /home/osg/app/atlas_app/copysetup.sh"
+    - "mkdir -p /home/cvmfs" 
+    - "chown -R cvmfs:cvmfs /home/cvmfs"
+    - "/sbin/chkconfig cvmfs on" 
+    - "/bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel"

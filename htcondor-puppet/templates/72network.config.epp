@@ -1,0 +1,12 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# Networking configuration
+#
+#HIGHPORT = 9700
+#LOWPORT = 9600
+CREDD_PORT = 9620
+STORK_PORT = 9621
+# USE_SHARED_PORT = TRUE
+
+TRUST_UID_DOMAIN = True
+UID_DOMAIN = <%= $domain %>

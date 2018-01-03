@@ -1,0 +1,1 @@
+lcg-cr -v --vo ops -d lcg03.usatlas.bnl.gov -l lfn:sft-lcg-rm-cr-acas0200.usatlas.bnl.gov.070221152318 file:///tmp/WMS_acas0200_028505_https_3a_2f_2frb113.cern.ch_3a9000_2fno-aa8RhzV4Uw6WRdkB3KQ/work/testjob/nodes/lcg01.usatlas.bnl.gov/sft-lcg-rm-cr.txt

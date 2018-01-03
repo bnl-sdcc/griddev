@@ -1,0 +1,23 @@
+23 Jun, 16:49:56 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 15:31:13 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 17:51:09 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 17:51:11 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 17:51:12 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 17:56:54 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 17:57:40 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 18:03:54 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+30 Jun, 18:32:53 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Jul, 17:00:05 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Jul, 17:00:16 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Jul, 17:00:47 -C- "CFCI::crRemoteDirs": Cannot create job directory on NS: lcg02.usatlas.bnl.gov/var/glite/SandboxDir/Ar/https_3a_2f_2flcg02.usatlas.bnl.gov_3a9000_2fAr_5f3q-8XI1Dgdl-hFJLqYA
+10 Jul, 17:00:47 -C- "CFCI::evRemoteDirsCr": Remote Dirs Creation failed: stopping Job.
+10 Jul, 17:00:47 -C- "NSC::submit": Globus Ftp API Failure in creating remote Directories.
+24 Jul, 14:42:24 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+24 Jul, 14:42:42 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+24 Jul, 14:42:43 -C- "CFCI::crRemoteDirs": Cannot create job directory on NS: lcg02.usatlas.bnl.gov/var/glite/SandboxDir/Hh/https_3a_2f_2flcg02.usatlas.bnl.gov_3a9000_2fHhWX1JlDXMd3r6vOJCFQJg
+24 Jul, 14:42:43 -C- "CFCI::evRemoteDirsCr": Remote Dirs Creation failed: stopping Job.
+24 Jul, 14:42:43 -C- "NSC::submit": Globus Ftp API Failure in creating remote Directories.
+10 Aug, 14:35:55 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Aug, 14:36:36 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Aug, 14:36:55 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov
+10 Aug, 14:37:05 -C- "NSC::NSClient": Resolved Hostname: lcg02.usatlas.bnl.gov

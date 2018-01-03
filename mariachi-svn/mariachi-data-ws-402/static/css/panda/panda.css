@@ -1,0 +1,102 @@
+/* comment */
+/*
+body {
+  color: black;
+  background-color: #cc9966;
+}
+*/
+
+td {
+font-family: sans-serif;
+font-size: small;
+}
+
+#tophome{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#topheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#browsertitle{
+ visibility: hidden;
+}
+
+#homeup{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+}
+
+#hometop{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#homedown{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#titleheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: large;
+font-weight: bold;
+}
+
+#nav{
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#menu{
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#main{
+text-align: left;
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#foot{
+font-size: small;
+font-family: sans-serif;
+}
+
+.headerbar {
+  background: #ffcccc;
+  font-family: sans-serif;
+}
+
+.menubar {
+  background: #ffcc88;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.overlap {
+  background: #ffccaa;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.mainpage {
+  background: white;
+  font-family: sans-serif;
+  font-size: small;
+}

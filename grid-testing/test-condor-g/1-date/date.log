@@ -1,0 +1,24 @@
+000 (3270187.000.000) 03/14 12:05:50 Job submitted from host: <130.199.185.8:22190>
+...
+017 (3270187.000.000) 03/14 12:06:32 Job submitted to Globus
+    RM-Contact: gridgk02.racf.bnl.gov/jobmanager-fork
+    JM-Contact: https://gridgk02.racf.bnl.gov:26470/15991/1205510773/
+    Can-Restart-JM: 1
+...
+027 (3270187.000.000) 03/14 12:06:32 Job submitted to grid resource
+    GridResource: gt2 gridgk02.racf.bnl.gov/jobmanager-fork
+    GridJobId: gt2 gridgk02.racf.bnl.gov/jobmanager-fork https://gridgk02.racf.bnl.gov:26470/15991/1205510773/
+...
+001 (3270187.000.000) 03/14 12:08:11 Job executing on host: gt2 gridgk02.racf.bnl.gov/jobmanager-fork
+...
+005 (3270187.000.000) 03/14 12:08:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...

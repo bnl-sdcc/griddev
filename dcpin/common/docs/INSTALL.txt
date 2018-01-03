@@ -1,0 +1,5 @@
+Installing dcpin
+---------------------
+
+To use the program you will need to get the admin ssh key. E-mail John or Iris. 
+

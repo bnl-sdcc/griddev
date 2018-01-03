@@ -1,0 +1,6 @@
+Executable = "simpleEdgOne.sh";
+StdOutput = "simpleEdgOne.out";
+StdError = "simpleEdgOne.err";
+InputSandbox = {"./simpleEdgOne.sh"};
+OutputSandbox = {"simpleEdgOne.out","simpleEdgOne.err"};
+Requirements = other.GlueCEUniqueID == "lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor-atlas";

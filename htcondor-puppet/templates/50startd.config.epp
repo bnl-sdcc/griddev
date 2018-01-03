@@ -1,0 +1,40 @@
+# This file is managed by Puppet - DO NOT EDIT!
+#
+# Configuration for startd
+#
+DAEMON_LIST = $(DAEMON_LIST) STARTD
+
+#
+# By default, assume local collector, but will be overridden by later configs
+# 
+COLLECTOR_HOST=$(CONDOR_HOST):9618
+
+# Pool and worker setup
+START = TRUE
+SUSPEND = FALSE
+PREEMPT = FALSE
+KILL = FALSE
+RANK = 0
+WANT_SUSPEND   = False
+WANT_VACATE    = False
+CLAIM_WORKLIFE = 3600
+JOB_RENICE_INCREMENT=0
+GSI_DELEGATION_KEYBITS = 1024
+
+<% if $htcondor::use_dedicated_scheduler { -%>
+DedicatedScheduler = "DedicatedScheduler@<%= $htcondor::dedicated_scheduler %>"
+STARTD_ATTRS = $(STARTD_ATTRS), DedicatedScheduler
+RANK      = Scheduler =?= $(DedicatedScheduler)
+MPI_CONDOR_RSH_PATH = $(LIBEXEC)
+CONDOR_SSHD = /usr/sbin/sshd
+CONDOR_SSH_KEYGEN = /usr/bin/ssh-keygen
+<% } -%>
+
+# Network setup. Use shared port. 
+UPDATE_COLLECTOR_WITH_TCP = True
+UPDATE_INTERVAL = 30
+CCB_ADDRESS = $(COLLECTOR_HOST)
+PRIVATE_NETWORK_NAME = localdomain
+
+
+

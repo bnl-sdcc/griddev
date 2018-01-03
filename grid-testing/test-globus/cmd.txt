@@ -1,0 +1,1 @@
+globus-job-run lcg01.usatlas.bnl.gov:2119/jobmanager-lcgcondor /bin/env

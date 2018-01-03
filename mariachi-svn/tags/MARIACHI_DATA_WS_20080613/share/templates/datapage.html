@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Data Retrieval Page{% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+	<label for="startyear">Select Start Date: Year</label>
+	<select name="startyear">
+		<option value="2006">2006</option>
+		<option value="2007">2007</option>
+		<option value="2008">2008</option>
+	</select>
+	
+	<label for="startmonth">Month</label>
+	<select name="startmonth" >
+		<option value="01">January</option>
+		<option value="02">February</option>
+		<option value="03">March</option>
+		<option value="04">April</option>
+		<option value="05">May</option>
+		<option value="06">June</option>
+		<option value="07">July</option>
+		<option value="08">August</option>
+		<option value="09">September</option>
+		<option value="10">October</option>
+		<option value="11">November</option>
+		<option value="12">December</option>
+	</select>
+
+	<label for="startday">Day</label>
+	<input type="text" name="startday" value="{{query|escape}}">
+	<br>
+	<label for="endyear">Select End Date: Year</label>
+	<input type="text" name="startyear" value="{{query|escape}}">
+	<label for="endmonth">Month</label>
+	<input type="text" name="startmonth" value="{{query|escape}}">
+	<label for="endday">Day</label>
+	<input type="text" name="startday" value="{{query|escape}}">
+	<br>
+	<input type="submit" value="Submit">
+</form>
+{% endblock %}

@@ -1,0 +1,4 @@
+include *.txt *.py *.html
+recursive-include httpcheck *.py 
+recursive-include share *.html *.py *.pyc *.pyo
+recursive-include config *.conf magic

@@ -1,0 +1,77 @@
+Various development notes
+======================================
+
+Looked into just using the htcp utility from Gridsite, but it uses curl, which
+will throw errors if it cannot verify the server-side cert. We'd love for it to
+do it, but it seems to require its own CA file "bundle" (rather than just
+looking in /etc/grid-security) and there was no clear docs to tell it where
+to look. 
+
+Probably better to use native python anyway. 
+
+---
+
+Since the upload daemon needs to run non-interactively, whatever certificate is used
+needs to not have a password applied to the private key. For testing, it may
+be handy to convert a user cert with a passphrase to one without. 
+
+Use:
+openssl rsa -inform PEM -outform PEM -in userkey.pem -out userkeynopw.pem
+
+--- 
+DAQ box setup:
+  install pyvault, fix alternatives links. System default remains 2.3 (SL4)
+  
+---
+Form design for mod_gridsite directory. 
+
+New directory form:
+<form 
+    method=post 
+    action="/gridsite/gridsite-admin.cgi">
+    <tr>
+        <td colspan=8><hr width="75%"></td>
+    </tr>
+    <tr>
+        <td>New name:</td>
+        <td colspan=3>
+            <input type=text name=file size=25>
+            <td colspan=2 align=center>
+            	<input type=submit name=button value="New file">
+            </td>
+            <td colspan=2 align=center>
+            	<input type=submit name=button value="New directory">
+             </td>
+             	<input type=hidden name=cmd value=edit>
+             </td>
+    </tr>
+</form>
+
+Existing file upload form:
+<form 
+       method=post 
+       action="/gridsite/gridsite-admin.cgi" 
+       enctype="multipart/form-data">
+        <tr>
+                <td colspan=8><hr width="75%"></td>
+        </tr>
+        <tr>
+                <td rowspan=2>Upload file:</td>
+                <td colspan=2>New name:</td>
+                <td colspan=6>
+                        <input  type=text name=file size=25> 
+                        <input  type=submit value=Upload>
+                </td>
+        </tr>
+        <tr>
+                <td colspan=2>Local name:</td>
+                <td colspan=6>
+                        <input type=file name=uploadfile size=25>
+                </td>
+        </tr>
+</form>
+
+
+
+
+

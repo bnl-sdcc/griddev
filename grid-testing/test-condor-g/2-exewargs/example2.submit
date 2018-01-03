@@ -1,0 +1,9 @@
+executable = myapp
+arguments=  George 90
+Transfer_Executable = true
+globusscheduler = gridgk01.racf.bnl.gov
+universe = grid
+output = myapp.out
+error=myapp.error
+log = myapp.log
+queue

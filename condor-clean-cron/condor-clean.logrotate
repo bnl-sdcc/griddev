@@ -1,0 +1,8 @@
+/var/log/condor-clean-cron.log  {
+    compress
+    daily
+    rotate 12
+    missingok
+    ifempty
+    create
+}

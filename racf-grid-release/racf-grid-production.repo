@@ -1,0 +1,10 @@
+[racf-grid-production]
+name=RACF Grid Production RPMS $releasever - $basearch
+failovermethod=priority
+baseurl=http://dev.racf.bnl.gov/yum/grid/production/rhel/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-racf-grid.asc
+
+
+

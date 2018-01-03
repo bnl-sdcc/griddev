@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="docstyle.css" type="text/css" rel="stylesheet">
+
+<title>Gratia - Service configuration howto</title>
+</head>
+
+<body>
+<h1 align="center">Service Configuration Settings </h1>
+<h3>Server Specific Settings</h3>
+
+<table  border="1" cellpadding="0" cellspacing="0" width="80%">
+  <tbody>
+    <tr bgcolor="#CCCCCC" >
+      <th valign="top" width="20%">Setting</th>
+      <th valign="top" width="45%">Meaning</th>
+      <th valign="top" width="35%">Default/Example</th>
+    </tr>
+    <tr >
+      <td   valign="top" >service.rmi.port</td>
+      <td   valign="top" >The default port used by gratia for internal rmi use</td>
+      <td   valign="top" >17000</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.rmi.bin</td>
+      <td   valign="top" >The registered rmi name for rmi access</td>
+      <td   valign="top" >//Fermi.fnal.gov:17000</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.rmi.lookup</td>
+      <td   valign="top" >The &quot;external&quot; rmi name that outside services can access</td>
+      <td   valign="top" >rmi://Fermi.fnal.gov:17000</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.rmi.service</td>
+      <td   valign="top" >The tomcat webapp that rmi requests can be sent to</td>
+      <td   valign="top" >/gratia</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Security Settings</h3>
+<table  border="1" cellpadding="0" cellspacing="0" width="80%">
+  <tbody>
+    <tr bgcolor="#CCCCCC" >
+      <th valign="top" width="20%">Setting</th>
+      <th  valign="top" width="45%">Meaning</th>
+      <th valign="top" width="35%">Default/Example</th>
+    </tr>
+    <tr >
+      <td   valign="top" >service.security.level</td>
+      <td   valign="top" >Flag indicating what form of security should gratia assume.</td>
+      <td   valign="top" >
+          0 = no security [Current default]<br>
+          1 = Track connections without SSL, check connection validity<br>
+          2 = Check only SSL certificate (both cert validity and validity within Collector)<br>
+          3 = Same as 2 + Track connection with SSL and check connection validity<br>
+          4 = Require SSL connection + same checks as 2<br>
+          5 = Same as 4 + Track connection with SSL and check connection validity<br>
+    </tr>
+    <tr >
+      <td   valign="top" >service.use.selfgenerated.certs</td>
+      <td   valign="top" >Flag indicating whether or not gratia should generate it&rsquo;s own certs or use vdt/doe certs</td>
+      <td   valign="top" >1 = Use self generated certs</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.vdt.cert.file</td>
+      <td   valign="top" >Absolute path to vdt/doe public cert file</td>
+      <td   valign="top" >/etc/grid-security/httpcert.pem</td>
+    </tr>
+    <tr >
+      <td   valign="top" >Service.vdt.key.file</td>
+      <td   valign="top" >Absolute path to vdt/doe private key file</td>
+      <td   valign="top" >/etc/grid-security/httpkey.pem</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.autoregister.pem</td>
+      <td   valign="top" >Flag indicating whether or not external services (when running ssl) will automatically be trusted. Values are 0 (no) or 1 (yes) &ndash; refer to security howto</td>
+      <td   valign="top" >1</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.open.connection</td>
+      <td   valign="top" >The open, unsecured url clients can connect to</td>
+      <td   valign="top" >http://fermilab:8880</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.secure.connection</td>
+      <td   valign="top" >The ssl enabled url that clients can connect to</td>
+      <td   valign="top" >https://fermilab:8843</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>JMS Settings</h3>
+<table  border="1" cellpadding="0" cellspacing="0" width="80%">
+  <tbody>
+    <tr bgcolor="#CCCCCC" >
+      <th  valign="top" width="20%">Setting</th>
+      <th  valign="top"  width="45%">Meaning</th>
+      <th  valign="top" width="35%">Default/Example</th>
+    </tr>
+    <tr >
+      <td   valign="top" >service.listener.threads</td>
+      <td   valign="top">The number of threads used to process incoming data transmissions</td>
+      <td   valign="top">e</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Database Settings</h3>
+<table  border="1" cellpadding="0" cellspacing="0" width="80%">
+  <tbody>
+    <tr bgcolor="#CCCCCC" >
+      <th  valign="top" width="20%">Setting</th>
+      <th  valign="top" width="45%">Meaning</th>
+      <th  valign="top" width="35%">Default/Example</th>
+    </tr>
+    <tr >
+      <td valign="top" >service.mysql.driver</td>
+      <td valign="top" >The name of the mysql sql driver being used.</td>
+      <td valign="top" >com.mysql.jdbc.Driver</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.mysql.url</td>
+      <td   valign="top" >The url of the gratia database</td>
+      <td   valign="top" >jdbc:mysql://Fermi.fnal.gov:3306/gratia</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.mysql.user</td>
+      <td   valign="top" >The user id allowed to access/update the database</td>
+      <td   valign="top" >youruserid</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.mysql.password</td>
+      <td   valign="top" >Database password</td>
+      <td   valign="top" >youruserpassword</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Reporting Settings</h3>
+<table  border="1" cellpadding="0" cellspacing="0" width="80%">
+  <tbody>
+    <tr bgcolor="#CCCCCC" >
+      <th  valign="top" width="20%">Setting</th>
+      <th  valign="top" width="45%">Meaning</th>
+      <th  valign="top" width="35%">Default/Example</th>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.user</td>
+      <td   valign="top" >The userid (with read only access) to your database</td>
+      <td   valign="top" >reader</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.password</td>
+      <td   valign="top" >Password for user.</td>
+      <td   valign="top" >reader</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.reports.folder</td>
+      <td   valign="top" >Path (relative to webapps) of the folder containing the various rptdesign files</td>
+      <td   valign="top" >gratia-reports/reports</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.static.folder</td>
+      <td   valign="top" >Path (relative to webapps) of the folder to store the static reports (pdf format) produced daily.</td>
+      <td   valign="top" >gratia-reports/reports-static</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.webapp.home</td>
+      <td   valign="top" >Path (relative to webapps) of the folder containing the reporting application</td>
+      <td   valign="top" >gratia-reporting</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.menuconfig</td>
+      <td   valign="top" >Path (relative to webapps) and file name of the file containg the menu configuration</td>
+      <td   valign="top" >gratia-reports/MenuConfig/UserConfig_osg.xml</td>
+    </tr>
+    <tr >
+      <td   valign="top" >service.reporting.staticreports</td>
+      <td   valign="top" >Path (relative to webapps) and file name of the file containg the static reports to be produced on a daily basis</td>
+      <td   valign="top" >gratia-reports/MenuConfig/StaticReports.xml</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

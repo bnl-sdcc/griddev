@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gov.bnl.templates</groupId>
+	<artifactId>rpm-template</artifactId>
+	<version>1.0</version>
+	<description>MyApp only does one thing, but it does it very well.</description>
+  
+  	<repositories>
+		<repository>
+	    	<id>central</id>
+			<name>Maven Repository Switchboard</name>
+	 		<layout>default</layout>
+ 			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		
+		<repository>
+	    	<id>ibiblio</id>
+			<name>Maven Repository Switchboard</name>
+	 		<layout>default</layout>
+ 			<url>http://www.ibiblio.org/maven2/</url>
+		</repository>
+	
+	</repositories>
+
+     <pluginRepositories>
+		<pluginRepository>
+    		<id>Mojo Snapshots</id>
+    		<url>http://snapshots.repository.codehaus.org/</url>
+    		<snapshots>
+      			<enabled>true</enabled>
+    		</snapshots>
+    		<releases>
+      			<enabled>false</enabled>
+    		</releases>
+  		</pluginRepository>
+    </pluginRepositories>
+
+	<build>
+        <plugins>
+            <plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-jar-plugin</artifactId>
+        		<configuration>
+	  				<archive>
+	    				<manifest>
+	      					<mainClass>gov.bnl.templates.MyApp</mainClass>
+	    				</manifest>
+	  				</archive>
+        		</configuration>
+      		</plugin>
+        
+        
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>rpm-maven-plugin</artifactId>
+                <version>2.0-alpha-3-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>rpm</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <release>1</release>
+                    <copyright>GPL</copyright>
+                    <distribution>myapp</distribution>
+                    <group>Grid/Security</group>
+                    <packager>John R. Hover</packager>
+                    <prefix>/usr</prefix>
+
+                    <mappings>
+                        <mapping>
+                            <directory>/usr/bin</directory>
+                            <filemode>775</filemode>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>src/main/bin</location>
+                                </source>
+                            </sources>
+                        </mapping>
+             
+                        <mapping>
+                            <directory>/etc/myapp</directory>
+                            <configuration>true</configuration>
+                            <filemode>444</filemode>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>src/main/config</location>
+                                </source>
+                            </sources>
+                        </mapping>
+
+                        <mapping>
+                            <directory>/usr/lib/myapp</directory>
+                            <filemode>755</filemode>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <artifact/>
+                        </mapping> 
+              
+                        <mapping>
+                            <directory>/var/log</directory>
+                            <filemode>750</filemode>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                        </mapping>
+                    </mappings>
+                    <postinstallScript>src/main/scripts/postinstall.sh</postinstallScript>
+                    <preremoveScript>src/main/scripts/preuninstall.sh</preremoveScript>
+                </configuration>
+            </plugin>
+           
+		</plugins>
+    </build>
+	 
+ 	<dependencies> 
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+ 	</dependencies>  
+</project>
